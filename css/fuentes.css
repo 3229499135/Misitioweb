@@ -1,0 +1,6 @@
+h2{
+    font-size: 100px; /* Tamaño de la imagen */
+    font-weight: 900; /* grosor de la letra */
+    font-style: italic; /* el estilo de la letra */
+    font-family: 'Gloock', serif;
+}
