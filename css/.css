@@ -1,32 +1,23 @@
-label {
-    font-size: 3em;
-    color: crimson;
+* {
+    margin: 0;
+    padding: 0;
 }
-
-body {
-    background-color: aliceblue;
-}
-
-label {
+div {
+    background-color: rgb(3, 33, 66);
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    position:absolute;
-    left: 50%;
-    top: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    font-size: 50px;
-    font-weight: 100;
+    height: 100vh;
 }
-.special-font {
-    font-family: 'Cinzel', 'sans-serif';
-}
+.font-disney {
+    font-family: waltograph;
+    font-size: 14em;
 
-/* cinzel-700 - latin */
+}
+/* waltograph-700 - latin */
 @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Cinzel';
+    font-family: 'waltograph';
     font-style: normal;
     font-weight: 700;
     src: url('../fonts/cinzel-v19-latin-700.eot'); /* IE9 Compat Modes */
