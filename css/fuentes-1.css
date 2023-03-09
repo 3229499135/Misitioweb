@@ -5,6 +5,11 @@ label {
 
 body {
     background-color: aliceblue;
+    background-image: url(img/descarga\ \(6\).jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 label {
