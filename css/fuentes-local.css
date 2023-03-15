@@ -7,3 +7,13 @@ h1 {
 .tam-font-4em {
     font-size: 4em;
 }
+body {
+    background-image: url(img/descarga\ \(2\).jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.color {
+    color: aquamarine;
+}
