@@ -8,6 +8,9 @@ table, th, td{
     padding: 15px 20px 18px 20px;
     background-color: rgb(200, 200, 200);
 }
+table{
+    width: 75%;
+}
 th{
     color: #fff;
 }
@@ -21,4 +24,9 @@ th{
 }
 .Celda-1{
     border-top-left-radius: 20px;
+}
+.X{
+    color: red;
+    font-weight: 1000;
+    font-size: 1.7em;
 }
