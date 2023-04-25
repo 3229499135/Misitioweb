@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/formulario.css">
+    <link rel="shortcut icon" href="css/img/favicon.png" type="image/x-icon">
+    <title>Formularios</title>
+</head>
+<body>
+    <div class="main-box">
+        <div class="content-box">
+            <div class="form-title">
+                <h1>Citas Medicas</h1>
+            </div>
+            <div class="form-box">
+                <form>
+                    <div>
+                        <label>Ingrese su nombre</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label>Ingrese su apellido</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label>Tipo de documento</label>
+                        <select name="Tipo de documento" id="">
+                            <option value="C.C">Cedula de Ciudadania</option>
+                            <option value="T.I">Targeta de Identidad</option>
+                            <option value="R.C">Regitro Civil</option>
+                            <option value="C.E">Cedula Extranjera</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label>Número de documentos</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label>Observaciones</label>
+                        <textarea name="Mensaje" cols="60" rows="10" maxlength="200" value="Observaciones(Max. 200 carácteres)"></textarea>
+                        
+                    <div>
+                        <label>Ver dias disponibles</label>
+                        <input type="checkbox" name="disponibilidad" value="Lunes">Lunes<br>
+                        <input type="checkbox" name="disponibilidad" value="Martes">Martes<br>
+                        <input type="checkbox" name="disponibilidad" value="Miercoles">Miercoles<br>
+                        <input type="checkbox" name="disponibilidad" value="Jueves">Jueves<br>
+                        <input type="checkbox" name="disponibilidad" value="Viernes">Viernes<br>
+                    </div>
+                    <div>
+                        <label>IPS de atención</label>
+                        <input type="radio" name="Clase-vuelo">IPS Centro<br>
+                        <input type="radio" name="Clase-vuelo">IPS Agua Blanca<br>
+                        <input type="radio" name="Clase-vuelo">IPS Cálamo<br>
+                        <input type="radio" name="Clase-vuelo">IPS Solarte<br>
+                    </div>
+                    <div>
+                        <label>Tipo de documento</label>
+                        <select name="Tipo de documento" id="">
+                            <option value="Dr">Liliana Yisela Gómes</option>
+                            <option value="Dr">Fernando Antonio Echeverry</option>
+                            <option value="Dr">Sergio Camacho</option>
+                            <option value="Dr">David Eduardo Espitia</option>
+                            <option value="Dr">Jorge Izaac Zapata</option>
+                        </select>
+                    </div>
+                    <div>
+                        <input type="submit" value="enviar">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>    
+</body>
+</html>
