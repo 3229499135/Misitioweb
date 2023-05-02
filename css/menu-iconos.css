@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100vh;
+    background-color: gainsboro;
+}
+.main-menu{
+    list-style: none;
+}
+.icon-style, span{
+    color: rgb(94, 94, 94);
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 1.4em;
+}

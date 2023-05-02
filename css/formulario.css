@@ -65,3 +65,6 @@ input[type="submit"] {
 input[type="text"]:focus {
     outline: none;
 }
+textarea{
+    font-size: 1.3em;
+}
