@@ -6,7 +6,7 @@ nav{
     position: fixed;
     top: 0;
     left: 0;
-    width: 200px;
+    width: 250px;
     height: 100vh;
     background-color: gainsboro;
 }
@@ -15,11 +15,17 @@ nav{
 }
 .icon-style, span{
     color: rgb(94, 94, 94);
-    margin-top: 15px;
-    margin-left: 20px;
+    margin: 7px 20px;
     font-size: 1.4em;
+}
+div {
+    cursor: pointer;
+    margin: 6px;
+    background-color: rgb(200, 200, 200);
+}
+div:hover {
+    background-color: rgb(180, 180, 180);
 }
 .uno {
     border-top: 2px solid rgb(160, 160, 160);
-    margin-top: 15px;
 }
