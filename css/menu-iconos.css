@@ -18,12 +18,12 @@ nav{
     margin: 7px 20px;
     font-size: 1.4em;
 }
-div {
+li {
     cursor: pointer;
     margin: 6px;
     background-color: rgb(200, 200, 200);
 }
-div:hover {
+li:hover {
     background-color: rgb(180, 180, 180);
 }
 .uno {
