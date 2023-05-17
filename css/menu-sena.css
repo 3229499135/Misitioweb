@@ -90,7 +90,7 @@ body {
         transition: none;
     }
     .main-menu .item-horizontal {
-        display: inline-block;
+        display: inline;
         float: left;
         transition: none;
     }
