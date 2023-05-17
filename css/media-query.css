@@ -45,6 +45,7 @@ a {
 }
 @media only screen and (max-width: 850px){
     .main-menu {
+        position: fixed;
         display: none;
     }
     .main-menu-block {

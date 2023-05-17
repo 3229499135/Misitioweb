@@ -1,0 +1,9 @@
+.box-1 {
+    width: 300px;
+    background-color: blue;
+    transition: all;
+}
+.box-1:hover {
+    width: 900px;
+    background-color: blueviolet;
+}
