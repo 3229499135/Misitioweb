@@ -74,7 +74,7 @@ body {
     text-decoration: none;
     color: white;
 }
-@media (min-width:768px) {
+@media (min-width:840px) {
     .bar-btn{
         display: none;
     }
