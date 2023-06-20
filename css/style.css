@@ -30,16 +30,16 @@ h2, h3 {
 }
 h2:hover, h3:hover {
     text-shadow: 0 0 5px #fff,
-    0 0 10px #fff, 0 0 15px #ff852e,
-    0 0 20px #ff852e, 0 0 25px #ff852e,
-    0 0 30px #ff852e;
+        0 0 10px #fff, 0 0 15px #ff852e,
+        0 0 20px #ff852e, 0 0 25px #ff852e,
+        0 0 30px #ff852e;
 }
 h3 {
     text-align: center;
 }
 body {
     background-color: aliceblue;
-    background-image: url(img/images\ 2.jpg);
+    background-image: url(../img/images\ 2.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

@@ -2,11 +2,9 @@ label {
     font-size: 3em;
     color: crimson;
 }
-
 body {
     background-color: black;
 }
-
 label {
     display: flex;
     justify-content: center;
@@ -19,7 +17,6 @@ label {
     font-size: 200px;
     font-weight: 100;
 }
-
 .fuente2{
     font-family: 'Bebas Neue', sans-serif;
     font-size: 14em;
