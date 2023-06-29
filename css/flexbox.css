@@ -17,6 +17,8 @@
     top: 300px;
     left: -72px;
     height: 39px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
     background-color: var(--azul-oscuro);
     transition: all 1s;
 }
@@ -27,6 +29,8 @@
     top: 300px;
     left: 0;
     height: 39px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
     background-color: var(--azul-oscuro);
 }
 .inicio-1 {
@@ -44,6 +48,8 @@
     margin: 0;
     width: 36px;
     height: 37px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
     border: 1px solid var(--negro);
 }
 ul {
