@@ -7,10 +7,10 @@
     --verde: #008b8b;
     --amarillo: #daa520;
     --blanco: white;
-    --azul-oscuro: #191970;
-    --negro: #000;
+    /* --azul-oscuro: #191970;
+    --negro: #000; */
 }
-.container {
+/* .container {
     position: fixed;
     display: flex;
     width: 110px;
@@ -61,7 +61,7 @@ a {
     padding: 11px 17px;
     text-decoration: none;
     background-color: transparent;
-}
+} */
 .box {
     width: 100%;
     background-color: var(--verde);
