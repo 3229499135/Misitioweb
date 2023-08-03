@@ -1,0 +1,11 @@
+body {
+    background-color: aliceblue;
+    background-image: url(../img/images.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.color {
+    color: rgb(255, 255, 255);
+}
