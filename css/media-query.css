@@ -50,6 +50,7 @@ a {
     /*Desaparecemos el menu*/
     .main-menu {
         position: fixed;
+        width: 100%;
         left: -100%;
         height: 240px;
         transition: all 1s;
