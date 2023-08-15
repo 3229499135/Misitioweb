@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.contenedor {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "header header header";
+}
+.contenedor .header {
+    background: #ff8000;
+    grid-column-start: header;
+    grid-column-end: header;
+}
+.contenedor .sidebar-1 {
+    background-color: #5522ee;
+    /* grid-column: sidebar-1;
+    grid-row: sidebar-1; */
+    grid-area: sidebar-1;
+}
