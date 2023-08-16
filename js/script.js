@@ -1,11 +1,11 @@
-/* date = new Date();
+date = new Date();
 year = date.getFullYear();
 month = date.getMonth()+1;
 day = date.getDate();
-document.getElementById("date").innerHTML = day+" / "+month+" / "+year;
+document.getElementById("date").innerHTML = "Dia de consulta "+day+" / "+month+" / "+year;
 
 
-let tarbajos = document.getElementById("tarbajos");
+/* let tarbajos = document.getElementById("tarbajos");
 let practicas = document.getElementById("practicas");
 let menuUno = document.querySelector("ul");
 

@@ -115,6 +115,9 @@ li {
     display: inline-block;
     margin: 30px 20px;
 }
+.date {
+    color: #fff;
+}
 @media screen and (max-width: 715px) {
     a {
         width: 155px;
