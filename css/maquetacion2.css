@@ -33,18 +33,48 @@
   display: grid;
   grid-template-rows: 220px;
 }
-.img-article-1 {
-  background-image: url(../img/platos-tipico-700x450.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 .img-article {
   background-color: #404040;
   color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.img-article-1 {
+  background-image: url(../img/platos-tipicos-700x450.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.img-article-2 {
+  background-image: url(../img/platos-tipicos-500x333.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.img-article-3 {
+  background-image: url(../img/platos-tipicos-650x475.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.img-article-4 {
+  background-image: url(../img/platos-tipicos-640x428.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.img-article-5 {
+  background-image: url(../img/platos-tipicos-600x428.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.img-article-6 {
+  background-image: url(../img/platos-tipicos-612x407.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 p {
   margin: 10px;
