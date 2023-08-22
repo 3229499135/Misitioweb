@@ -5,16 +5,23 @@
   grid-gap: 16px;
   justify-content: center;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 70px 1000px;
+  grid-template-rows: 90px 1000px;
   grid-template-areas: "header header header";
 }
 .header {
   background-color: #de0801;
   color: #fff;
   grid-column-start: header;
+  grid-column-end: header;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+}
+.logo {
+  width: 80px;
+}
+.logo-2 {
+  width: 100%;
 }
 .img-principal {
   background-color: #008b8b;
