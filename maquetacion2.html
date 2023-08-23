@@ -1,19 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/maquetacion2.css">
   <link rel="stylesheet" href="css/stilo-boton-inicio.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
   <link rel="shortcut icon" href="img/favicon.png" type="image/img">
-  <title>Maquetacion 2</title>
+  <script defer src="js/maquetacion2.js"></script>
+  <title>Maquetación 2</title>
 </head>
 <body>
   <div class="container">
     <div class="inicio-1">
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
+      <ul class="inicio-menu">
+        <li><a class="enlace" href="index.html">Inicio</a></li>
       </ul>
     </div>
     <div class="inicio-2">
@@ -21,16 +23,17 @@
     </div>
   </div>
   <div class="contenedor">
-    <div class="header">
+    <header class="header">
       <div class="logo">
         <img src="img/Mi proyecto-1.png" alt="logo" class="logo-2">
       </div>
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="#">Producto</a></li>
-        <li><a href="index.html">Reserva</a></li>
+      <span class="menu-hambugesa" id="menuHamburguesa">&#9776</span>
+      <ul class="main-menu" id="mainMenu">
+        <li class="item-style"><a href="index.html">Inicio</a></li>
+        <li class="item-style"><a href="#">Producto</a></li>
+        <li class="item-style"><a href="#">Reserva</a></li>
       </ul>
-    </div>
+    </header>
     <div class="img-principal"></div>
     <div class="article">
       <div class="img-article img-article-1"></div>

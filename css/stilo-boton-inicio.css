@@ -44,7 +44,7 @@
     border-bottom-right-radius: 40px;
     border: 1px solid var(--negro);
 }
-ul {
+/* ul {
     list-style: none;
 }
 a {
@@ -53,6 +53,20 @@ a {
     padding: 11px 17px;
     text-decoration: none;
     background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+} */
+.inicio-menu {
+    list-style: none;
+}
+.enlace {
+    width: 100px;
+    color: var(--negro);
+    padding: 11px 17px;
+    text-decoration: none;
+    background-color: transparent;
+    margin: 0;
     position: absolute;
     top: 0;
     left: 0;
