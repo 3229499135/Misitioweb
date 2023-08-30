@@ -5,17 +5,20 @@ day = date.getDate();
 document.getElementById("date").innerHTML = "Fecha de consulta "+day+" / "+month+" / "+year;
 
 
-/* let tarbajos = document.getElementById("tarbajos");
+let tarbajos = document.getElementById("tarbajos");
 let practicas = document.getElementById("practicas");
-let menuUno = document.querySelector("ul");
 
 tarbajos.addEventListener("click", function() {
-  menuUno.classList.add("menu-1");
-  menuUno.classList.remove("menu-1-1");
+  let menuUno = document.getElementById("menuUno");
+  let menuDos = document.getElementById("menuDos");
+  
+  menuUno.style.display = 'block';
+  menuDos.style.display = 'none';
 });
 practicas.addEventListener("click", function() {
-  menuUno.classList.remove("menu-1");
-  menuUno.classList.add("menu-1-1");
-  menuUno.classList.remove("menu-2");
-  menuUno.classList.add("menu-2-2");
-}); */
+  let menuUno = document.getElementById("menuUno");
+  let menuDos = document.getElementById("menuDos");
+
+  menuUno.style.display = 'none';
+  menuDos.style.display = 'block';
+});
