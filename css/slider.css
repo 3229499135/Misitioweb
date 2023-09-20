@@ -5,21 +5,27 @@
 }
 header {
     height: 95px;
+    width: 100%;
+    z-index: 120;
+    position: fixed;
+    background-color: white;
 }
 .page-box-slider {
     width: 100%;
     overflow-x: hidden;
 }
-.box {
-    width: 100%;
-}
 .box-slider {
+    position: fixed;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     height: calc(100vh - 95px);
-    position: relative
+    position: relative;
     z-index: 10;
+    transition: all 1200ms;
+}
+.box {
+    width: 100%;
 }
 .img-slider {
     width: 100%;
@@ -51,4 +57,25 @@ header {
 }
 .icon-chevron-right {
     cursor: pointer;
+}
+.box-box-signal {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -50px;
+    z-index: 150;
+}
+.box-signal {
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 20px;
+}
+.signal {
+    width: 120px;
+    height: 20px;
+    background-color: brown;
+    padding: 0 25px;
 }
