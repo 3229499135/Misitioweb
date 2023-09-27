@@ -2,7 +2,7 @@ let boxSlider = document.getElementById("boxSlider");
 let iconchevronRight = document.getElementById("iconchevronRight");
 let iconChevronLeft = document.getElementById("iconChevronLeft");
 
-iconchevronRight.addEventListener.apply("click", function() {
+iconchevronRight.addEventListener("click", function() {
     if (boxSlider.classList.contains("box-slide-1")) {
         boxSlider.classList.remove("box-slide-1");
         boxSlider.classList.add("box-slide-2");
@@ -17,7 +17,7 @@ iconchevronRight.addEventListener.apply("click", function() {
     }
 })
 
-boxSlider.addEventListener("click", function() {
+iconChevronLeft.addEventListener("click", function() {
     if (boxSlider.classList.contains("box-slide-1")) {
         boxSlider.classList.remove("box-slide-1");
         boxSlider.classList.add("box-slide-2");
