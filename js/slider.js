@@ -47,7 +47,7 @@ iconChevronLeft.addEventListener("click", function() {
         signal1.classList.add("signal-select");
     }
 });
-/* 
+
 var img = ["box-slider-1", "box-slider-2", "box-slider-3", "box-slider-4"];
 var currenImg = 0;
 var counter = 1;
@@ -63,7 +63,7 @@ function imgs() {
     }
 
     boxSlider.classList.add(img[currenImg]);
-    setTimeout(imgs, 8000);
+    setTimeout(imgs, 5000);
 };
 
-imgs();  */
+imgs();
