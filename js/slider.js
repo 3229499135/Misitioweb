@@ -47,6 +47,19 @@ iconChevronLeft.addEventListener("click", function() {
         signal1.classList.add("signal-select");
     }
 });
+
+setTimeout(cambiarSlider, 3000);
+
+iconChevronRight.addEventListener("click", function() {
+    cambiarSlider();
+    setTimeout(cambiarSlider, 3000);
+  });
+  
+  iconChevronLeft.addEventListener("click", function() {
+    cambiarSlider();
+    setTimeout(cambiarSlider, 3000);
+  });
+  
 /* 
 var img = ["box-slider-1", "box-slider-2", "box-slider-3", "box-slider-4"];
 var currenImg = 0;
