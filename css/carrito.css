@@ -49,7 +49,19 @@ img {
 }
 .box-info-producto {
     grid-area: box-info-producto;
+    display: flex;
+    flex-direction: column;
+    padding: 0 25px 0 25px;
     background-color: greenyellow;
+}
+.title {
+    font-size: 2em;
+}
+.descripcion, .info-precio {
+    font-size: 1.3em;
+}
+.precio-unidad {
+    font-size: 2em;
 }
 .box-button-cantidad {
     font-size: 1.3em;
