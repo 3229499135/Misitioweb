@@ -56,18 +56,30 @@ img {
 }
 .title {
     font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 25px;
 }
-.descripcion, .info-precio {
+.descripcion {
+    font-size: 1.4em;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+.info-precio {
     font-size: 1.3em;
+    margin-bottom: 25px;
+    font-weight: 500;
 }
 .precio-unidad {
     font-size: 2em;
+    font-weight: 600;
 }
 .box-button-cantidad {
+    grid-area: box-buttons-cantidad;
     font-size: 1.3em;
     display: flex;
     flex-direction: row;
-    margin-top: 20px;
+    justify-content: center;
+    /* margin-top: 20px; */
 }
 .box-minus, .box-cant, .box-plus {
     width: 60px;
