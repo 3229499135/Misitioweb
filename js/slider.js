@@ -47,14 +47,14 @@ iconChevronLeft.addEventListener("click", function() {
         signal1.classList.add("signal-select");
     }
 });
-
+/* 
 var img = ["box-slider-1", "box-slider-2", "box-slider-3", "box-slider-4"];
 var currenImg = 0;
 var counter = 1;
 function imgs() {
     currenImg++;
     if (currenImg >= img.length) {
-        currenImg = 0
+        currenImg = 0;
     }
     document.getElementById("signal" + counter).classList.add("signal-select");
     counter++;
@@ -66,4 +66,4 @@ function imgs() {
     setTimeout(imgs, 5000);
 };
 
-imgs();
+imgs(); */

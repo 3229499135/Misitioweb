@@ -54,6 +54,7 @@ img {
     font-size: 1.3em;
     display: flex;
     flex-direction: row;
+    margin: 20px;
 }
 .box-minus, .box-cant, .box-plus {
     width: 60px;

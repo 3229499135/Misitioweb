@@ -1,6 +1,7 @@
 let boxMinus = document.getElementById("boxMinus");
 let boxCantidad = document.getElementById("boxCantidad");
 let boxPlus = document.getElementById("boxPlus");
+let subtotal = document.getElementById("subtotal");
 
 boxPlus.addEventListener("click", function() {
     let auxCant = boxCantidad.innerHTML;
