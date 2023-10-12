@@ -1,7 +1,7 @@
 let boxMinus = document.getElementById("boxMinus");
 let boxCantidad = document.getElementById("boxCantidad");
 let boxPlus = document.getElementById("boxPlus");
-let valorProducto = 200000000;
+let valorProducto = 237000000;
 let subtotal = document.getElementById('subtotal');
 let numerosPoductos = document.getElementById('numerosPoductos');
 
