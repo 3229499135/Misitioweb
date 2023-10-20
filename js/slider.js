@@ -7,59 +7,59 @@ let signal3 = document.getElementById("signal3");
 let signal4 = document.getElementById("signal4");
 
 iconChevronRight.addEventListener("click", function() {
-    if(boxSlider.classList.contains("box-slider-1")) {
-        boxSlider.classList.remove("box-slider-1");
-        boxSlider.classList.add("box-slider-2");
-        signal1.classList.remove("signal-select");
-        signal2.classList.add("signal-select");
-    }
-    else if(boxSlider.classList.contains("box-slider-2")) {
-        boxSlider.classList.remove("box-slider-2");
-        boxSlider.classList.add("box-slider-3");
-        signal2.classList.remove("signal-select");
-        signal3.classList.add("signal-select");
-    }
-    else if(boxSlider.classList.contains("box-slider-3")) {
-        boxSlider.classList.remove("box-slider-3");
-        boxSlider.classList.add("box-slider-4");
-        signal3.classList.remove("signal-select");
-        signal4.classList.add("signal-select");
-    }
+  if(boxSlider.classList.contains("box-slider-1")) {
+    boxSlider.classList.remove("box-slider-1");
+    boxSlider.classList.add("box-slider-2");
+    signal1.classList.remove("signal-select");
+    signal2.classList.add("signal-select");
+  }
+  else if(boxSlider.classList.contains("box-slider-2")) {
+    boxSlider.classList.remove("box-slider-2");
+    boxSlider.classList.add("box-slider-3");
+    signal2.classList.remove("signal-select");
+    signal3.classList.add("signal-select");
+  }
+  else if(boxSlider.classList.contains("box-slider-3")) {
+    boxSlider.classList.remove("box-slider-3");
+    boxSlider.classList.add("box-slider-4");
+    signal3.classList.remove("signal-select");
+    signal4.classList.add("signal-select");
+  }
 });
 
 iconChevronLeft.addEventListener("click", function() {
-    if(boxSlider.classList.contains("box-slider-4")) {
-        boxSlider.classList.remove("box-slider-4");
-        boxSlider.classList.add("box-slider-3");
-        signal4.classList.remove("signal-select");
-        signal3.classList.add("signal-select");
-    }
-    else if(boxSlider.classList.contains("box-slider-3")) {
-        boxSlider.classList.remove("box-slider-3");
-        boxSlider.classList.add("box-slider-2");
-        signal3.classList.remove("signal-select");
-        signal2.classList.add("signal-select");
-    }
-    else if(boxSlider.classList.contains("box-slider-2")) {
-        boxSlider.classList.remove("box-slider-2");
-        boxSlider.classList.add("box-slider-1");
-        signal2.classList.remove("signal-select");
-        signal1.classList.add("signal-select");
-    }
+  if(boxSlider.classList.contains("box-slider-4")) {
+    boxSlider.classList.remove("box-slider-4");
+    boxSlider.classList.add("box-slider-3");
+    signal4.classList.remove("signal-select");
+    signal3.classList.add("signal-select");
+  }
+  else if(boxSlider.classList.contains("box-slider-3")) {
+    boxSlider.classList.remove("box-slider-3");
+    boxSlider.classList.add("box-slider-2");
+    signal3.classList.remove("signal-select");
+    signal2.classList.add("signal-select");
+  }
+  else if(boxSlider.classList.contains("box-slider-2")) {
+    boxSlider.classList.remove("box-slider-2");
+    boxSlider.classList.add("box-slider-1");
+    signal2.classList.remove("signal-select");
+    signal1.classList.add("signal-select");
+  }
 });
 
 setTimeout(cambiarSlider, 3000);
 
 iconChevronRight.addEventListener("click", function() {
-    cambiarSlider();
-    setTimeout(cambiarSlider, 3000);
-  });
+  cambiarSlider();
+  setTimeout(cambiarSlider, 3000);
+});
   
-  iconChevronLeft.addEventListener("click", function() {
-    cambiarSlider();
-    setTimeout(cambiarSlider, 3000);
-  });
-  
+iconChevronLeft.addEventListener("click", function() {
+  cambiarSlider();
+  setTimeout(cambiarSlider, 3000);
+});
+
 /* 
 var img = ["box-slider-1", "box-slider-2", "box-slider-3", "box-slider-4"];
 var currenImg = 0;
