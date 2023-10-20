@@ -36,6 +36,7 @@ div {
 }
 i {
     font-size: 20px;
+    font-weight: bold;
     margin: 16px;
 }
 .infor {
@@ -115,14 +116,14 @@ a {
     margin: 0;
 }
 .bandera {
-    height: 40.8px;
-    height: 23.61px;
-    margin: 0 1px 0 5px;
+    width: 22px;
+    height: 15px;
+    margin: 0 1.3px 0 14px;
 }
 .lengua {
-    width: 19.5px;
+    width: 20px;
     height: 23px;
-    margin: 0 5px 0 1px;
+    margin: 0 14px 0 1.3px;
 }
 .cuenta-lista {
     width: 129.5px;
