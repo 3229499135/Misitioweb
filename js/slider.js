@@ -48,7 +48,7 @@ iconChevronLeft.addEventListener("click", function() {
   }
 });
 
-setTimeout(cambiarSlider, 3000);
+/* setTimeout(cambiarSlider, 3000);
 
 iconChevronRight.addEventListener("click", function() {
   cambiarSlider();
@@ -58,7 +58,7 @@ iconChevronRight.addEventListener("click", function() {
 iconChevronLeft.addEventListener("click", function() {
   cambiarSlider();
   setTimeout(cambiarSlider, 3000);
-});
+}); */
 
 /* 
 var img = ["box-slider-1", "box-slider-2", "box-slider-3", "box-slider-4"];

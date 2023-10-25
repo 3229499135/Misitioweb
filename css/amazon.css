@@ -169,6 +169,9 @@ a {
     font-size: 12px;
     font-weight: 700;
 }
+.cart {
+    margin: 0;
+}
 .carro {
     height: 26px;
     font-size: 12px;
