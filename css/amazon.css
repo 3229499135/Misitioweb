@@ -118,12 +118,19 @@ a {
 .bandera {
     width: 22px;
     height: 15px;
-    margin: 0 1.3px 0 14px;
+    margin: 0 1.3px 0 12px;
 }
 .lengua {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     width: 20px;
     height: 23px;
-    margin: 0 14px 0 1.3px;
+    margin: 0 12px 0 1.3px;
+}
+.icono {
+    font-size: 12px;
+    margin: 0.5px;
 }
 .cuenta-lista {
     width: 129.5px;
@@ -175,12 +182,15 @@ a {
 .carro {
     height: 26px;
     font-size: 12px;
-    position: relative;
+    display: flex;
     bottom: 0;
     font-weight: 700;
 }
 @media screen and (max-width: 450px) {
     .logo-enviar {}
+}
+.content {
+    width: 80px;
 }
 
 
