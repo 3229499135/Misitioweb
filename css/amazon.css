@@ -186,11 +186,27 @@ a {
     bottom: 0;
     font-weight: 700;
 }
+.content {
+    width: 80%;
+    height: 450px;
+    display: flex;
+    flex-direction: row;
+    margin: 6px auto;
+    color: #000;
+    padding: 10px;
+}
+.producto {
+    width: 400px;
+    height: 410px;
+}
+.text {
+    padding: 10px;
+}
+p {
+    color: #000;
+}
 @media screen and (max-width: 450px) {
     .logo-enviar {}
-}
-.content {
-    width: 80px;
 }
 
 
