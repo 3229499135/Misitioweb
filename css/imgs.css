@@ -1,0 +1,21 @@
+.image-container {
+    position: relative;
+    width: 500px; /* Ajusta el ancho según tu imagen */
+    overflow: hidden;
+}
+
+#original-image {
+    max-width: 100%;
+    display: block;
+}
+
+.magnifier {
+    width: 250px; /* Ancho de la lupa */
+    height: 250px; /* Altura de la lupa */
+    border: 2px solid #333;
+    position: absolute;
+    cursor: crosshair;
+    display: none;
+    background-image: url('../img/auriculares.jpg'); /* URL de tu imagen */
+    background-size: 500px; /* Ancho del contenedor de la imagen */
+}

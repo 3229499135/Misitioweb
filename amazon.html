@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/amazon.css">
     <link rel="stylesheet" href="icons/all.css">
@@ -73,63 +74,38 @@
     </header>
     <div class="content">
         <div class="container-producto-main" id="producto">
-            <img class="producto" src="img/auriculares.jpg" alt="">
+            <img id="original-image" class="producto" src="img/auriculares1.jpg" alt="">
+            <div id="magnifier" class="magnifier"></div>
         </div>
         <div class="text">
-            <p>BENGOO G9000 - Auriculares estéreo para juegos para PS4, PC, Xbox One PS5, cancelación de ruido, auriculares con micrófono, luz LED, sonido envolvente de bajos, orejeras de memoria suave para portátil, Mac, Nintendo NES Games</p>
-            <label class="precio">Cop <span class="signo-precio-producto">$</span><span class="precio-producto" id="precioProducto">0</span></label>
-            <div class="pagoSubtotal">
-                <label>Subtotal cop</label>
-                <label id="subtotal">$0</label>
-            </div>
-            <div class="box-button-cantidad">
-                <div id="boxMinus" class="box-minus">
-                    <i class="fa-solid fa-minus"></i>
-                </div>
-                <div id="boxCantidad" class="box-cant">0</div>
-                <div id="boxPlus" class="box-plus">
-                    <i class="fa-solid fa-plus"></i>
-                </div>
-            </div>
-            <div class="container-producto">
-                <div class="producto1" id="productoImgUno">
-                    <img class="img-producto" src="img/auriculares.jpg" alt="producto">
-                </div>
-                <div class="producto2" id="productoImgDos">
-                    <img class="img-producto" src="img/smart_300x300.jpeg" alt="">
-                </div>
-                <div class="producto3" id="productoImgTres">
-                    <img class="img-producto" src="img/televisor_300x300.jpeg" alt="">
-                </div>
-                <div class="producto4" id="productoImgCuatro">
-                    <img class="img-producto" src="img/tv_300x300.jpeg" alt="">
-                </div>
-            </div>
+            <p class="text-content-main">BENGOO G9000 - Auriculares estéreo para juegos para PS4, PC, Xbox One PS5, cancelación de ruido, auriculares con micrófono, luz LED, sonido envolvente de bajos, orejeras de memoria suave para portátil, Mac, Nintendo NES Games</p>
         </div>
     </div>
-    <!-- <div id="boxLight" class="box-light box-light-hide">
-        <div class="box-light-main">
-            <div id="btnBack" class="btn-style btn-back"><i class="style-btn fa-solid fa-chevron-left"></i></div>
-            <div id="btnFarther" class="btn-style btn-farther"><i class="style-btn fa-solid fa-chevron-right"></i></div>
-            <div id="btnX" class="btn-x"><i class="style btn2 fa-solid fa-x"></i></div>
-
-            <img src="img/auriculares.jpg" alt="" id="imgEscPrin" class="img-main-light">
-
-            <div class="fondo">
-                <div id="imgEsc1" class="box-img1">
-                    <img src="img/auriculares.jpg" alt="" id="imgMiniEsc1" class="img-mini">
-                </div>
-                <div id="imgEsc2" class="box-img2">
-                    <img src="img/smart_300x300.jpeg" alt="" id="imgMiniEsc2" class="img-mini">
-                </div>
-                <div id="imgEsc3" class="box-img3">
-                    <img src="img/televisor_300x300.jpeg" alt="" id="imgMiniEsc3" class="img-mini">
-                </div>
-                <div id="imgEsc4" class="box-img4">
-                    <img src="img/tv_300x300.jpeg" alt="" id="imgMiniEsc4" class="img-mini">
+    <div class="despregable" id="despregable">
+        <div class="content-dos">
+            <div id="btnX" class="btn-x"><i class="style-btn2 fa-solid fa-x"></i></div>
+            <div class="container-producto-main-dos" id="producto">
+                <img class="producto" id="imgProducto" src="img/auriculares1.jpg" alt="">
+            </div>
+            <div class="text">
+                <p class="text-content">BENGOO G9000 - Auriculares estéreo para juegos para PS4, PC, Xbox One PS5, cancelación de ruido, auriculares con micrófono, luz LED, sonido envolvente de bajos, orejeras de memoria suave para portátil, Mac, Nintendo NES Games</p>
+                <label class="precio">Cop <span class="signo-precio-producto">$</span><span class="precio-producto" id="precioProducto">0</span></label>
+                <div class="container-producto">
+                    <div class="producto1" id="productoImgUno">
+                        <img class="img-producto" src="img/auriculares1.jpg" alt="producto">
+                    </div>
+                    <div class="producto2" id="productoImgDos">
+                        <img class="img-producto" src="img/auriculares2.jpg" alt="">
+                    </div>
+                    <div class="producto3" id="productoImgTres">
+                        <img class="img-producto" src="img/auriculares3.jpg" alt="">
+                    </div>
+                    <div class="producto4" id="productoImgCuatro">
+                        <img class="img-producto" src="img/auriculares4.jpg" alt="">
+                    </div>
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>  
 </body>
 </html>
