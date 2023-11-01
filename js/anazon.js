@@ -1,7 +1,10 @@
 // Precio del produto 1
 let valorProducto1 = 435000;
+// Precio del produto 2
 let valorProducto2 = 400000;
+// Precio del produto 3
 let valorProducto3 = 430000;
+// Precio del produto 4
 let valorProducto4 = 420000;
 
 let auxValorProducto = new Intl.NumberFormat("de-DE").format(valorProducto1);
