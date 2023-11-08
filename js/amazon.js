@@ -1,32 +1,22 @@
-// Precio del produto 1
+// Precio del produto 1 al producto 4
 let valorProducto1 = 435000;
-// Precio del produto 2
 let valorProducto2 = 400000;
-// Precio del produto 3
 let valorProducto3 = 430000;
-// Precio del produto 4
 let valorProducto4 = 420000;
-
 let auxValorProducto = new Intl.NumberFormat("de-DE").format(valorProducto1);
 document.getElementById('precioProducto').innerHTML = auxValorProducto;
-
 
 // Para visualizar el contenedor modal
 let producto = document.getElementById("producto");
 let btnX = document.getElementById("btnX");
+let despregable = document.getElementById('despregable');
 
 producto.addEventListener('click', function() {
-    let despregable = document.getElementById('despregable');
-
-        despregable.style.visibility = 'visible';
+    despregable.style.visibility = 'visible';
 });
-
 btnX.addEventListener('click', function() {
-    let despregable = document.getElementById('despregable');
-
     despregable.style.visibility = 'hidden';
 });
-
 
 // Para seleccionar la imagen
 let productoImgUno = document.getElementById("productoImgUno");
@@ -76,7 +66,6 @@ productoImgCuatro.addEventListener('click', function() {
     document.getElementById('precioProducto').innerHTML = auxValorProducto;
 });
 
-
 // Para la lupa
 const imageContainer = document.querySelector('#producto');
 const magnifier = document.querySelector('.magnifier');
@@ -87,15 +76,14 @@ imageContainer.addEventListener('mousemove', (e) => {
     const offsetX = e.clientX - containerRect.left;
     const offsetY = e.clientY - containerRect.top;
 
-    const backgroundX = (offsetX / imageContainer.offsetWidth) * 100;
-    const backgroundY = (offsetY / imageContainer.offsetHeight) * 100;
+    const backgroundX = (offsetX / imageContainer.offsetWidth) * 120;
+    const backgroundY = (offsetY / imageContainer.offsetHeight) * 130;
 
     magnifier.style.backgroundPosition = `${backgroundX}% ${backgroundY}%`;
-    magnifier.style.left = e.clientX - magnifier.offsetWidth / 2 + 'px';
-    magnifier.style.top = e.clientY - magnifier.offsetHeight / 2 + 'px';
+    magnifier.style.left = e.clientX - magnifier.offsetWidth / 0.89 + 'px';
+    magnifier.style.top = e.clientY - magnifier.offsetHeight / 1.15 + 'px';
     magnifier.style.display = 'block';
 });
-
 imageContainer.addEventListener('mouseleave', () => {
     magnifier.style.display = 'none';
 });
