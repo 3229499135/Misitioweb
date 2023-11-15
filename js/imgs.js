@@ -1,4 +1,4 @@
-const imageContainer = document.querySelector('.image-container');
+/* const imageContainer = document.querySelector('.image-container');
 const magnifier = document.querySelector('.magnifier');
 const originalImage = document.getElementById('original-image');
 
@@ -18,4 +18,33 @@ imageContainer.addEventListener('mousemove', (e) => {
 
 imageContainer.addEventListener('mouseleave', () => {
     magnifier.style.display = 'none';
+}); */
+
+
+const contenedor = document.querySelector('.imagen-contenedor');
+const lupa = document.getElementById('lupa');
+const imagenPrincipal = document.getElementById('imagenPrincipal');
+
+contenedor.addEventListener('mousemove', (e) => {
+  const rect = contenedor.getBoundingClientRect();
+  const x = e.clientX - rect.left;
+  const y = e.clientY - rect.top;
+
+  const lupaSize = 150;
+  const offsetX = x - lupaSize / 2;
+  const offsetY = y - lupaSize / 2;
+
+  lupa.style.left = offsetX + 'px';
+  lupa.style.top = offsetY + 'px';
+  lupa.style.backgroundPosition = `-${offsetX * 2}px -${offsetY * 2}px`;
+
+  lupa.style.display = 'block';
+});
+
+contenedor.addEventListener('mouseleave', () => {
+  lupa.style.display = 'none';
+});
+
+contenedor.addEventListener('click', () => {
+  lupa.style.display = (lupa.style.display === 'none') ? 'block' : 'none';
 });

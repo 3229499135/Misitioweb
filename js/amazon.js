@@ -23,47 +23,99 @@ let productoImgUno = document.getElementById("productoImgUno");
 let productoImgDos = document.getElementById("productoImgDos");
 let productoImgTres = document.getElementById("productoImgTres");
 let productoImgCuatro = document.getElementById("productoImgCuatro");
+let productoImgCinco = document.getElementById("productoImgCinco");
+let productoImgSeis = document.getElementById("productoImgSeis");
+let productoImgSiete = document.getElementById("productoImgSiete");
+let productoImgOcho = document.getElementById("productoImgOcho");
 let imgProducto = document.getElementById('imgProducto');
 
 productoImgUno.addEventListener('click', function() {
     imgProducto.setAttribute("src","img/auriculares1.jpg");
-    productoImgUno.style.borderColor = '#F00';
-    productoImgDos.style.borderColor = '#9F9F9F';
-    productoImgTres.style.borderColor = '#9F9F9F';
-    productoImgCuatro.style.borderColor = '#9F9F9F';
-
-    let auxValorProducto = new Intl.NumberFormat("de-DE").format(valorProducto1);
-    document.getElementById('precioProducto').innerHTML = auxValorProducto;
+    productoImgUno.style.borderColor = '#FF8F00';
+    productoImgDos.style.borderColor = '#D5D9D9';
+    productoImgTres.style.borderColor = '#D5D9D9';
+    productoImgCuatro.style.borderColor = '#D5D9D9';
+    productoImgCinco.style.borderColor = '#D5D9D9';
+    productoImgSeis.style.borderColor = '#D5D9D9';
+    productoImgSiete.style.borderColor = '#D5D9D9';
+    productoImgOcho.style.borderColor = '#D5D9D9';
 });
 productoImgDos.addEventListener('click', function() {
-    imgProducto.setAttribute("src","img/auriculares2.jpg");
-    productoImgUno.style.borderColor = '#9F9F9F';
-    productoImgDos.style.borderColor = '#F00';
-    productoImgTres.style.borderColor = '#9F9F9F';
-    productoImgCuatro.style.borderColor = '#9F9F9F';
-
-    let auxValorProducto = new Intl.NumberFormat("de-DE").format(valorProducto2);
-    document.getElementById('precioProducto').innerHTML = auxValorProducto;
+    imgProducto.setAttribute("src","img/auriculares1-2.jpg");
+    productoImgUno.style.borderColor = '#D5D9D9';
+    productoImgDos.style.borderColor = '#FF8F00';
+    productoImgTres.style.borderColor = '#D5D9D9';
+    productoImgCuatro.style.borderColor = '#D5D9D9';
+    productoImgCinco.style.borderColor = '#D5D9D9';
+    productoImgSeis.style.borderColor = '#D5D9D9';
+    productoImgSiete.style.borderColor = '#D5D9D9';
+    productoImgOcho.style.borderColor = '#D5D9D9';
 });
 productoImgTres.addEventListener('click', function() {
-    imgProducto.setAttribute("src","img/auriculares3.jpg");
-    productoImgUno.style.borderColor = '#9F9F9F';
-    productoImgDos.style.borderColor = '#9F9F9F';
-    productoImgTres.style.borderColor = '#F00';
-    productoImgCuatro.style.borderColor = '#9F9F9F';
-
-    let auxValorProducto = new Intl.NumberFormat("de-DE").format(valorProducto3);
-    document.getElementById('precioProducto').innerHTML = auxValorProducto;
+    imgProducto.setAttribute("src","img/auriculares1-3.jpg");
+    productoImgUno.style.borderColor = '#D5D9D9';
+    productoImgDos.style.borderColor = '#D5D9D9';
+    productoImgTres.style.borderColor = '#FF8F00';
+    productoImgCuatro.style.borderColor = '#D5D9D9';
+    productoImgCinco.style.borderColor = '#D5D9D9';
+    productoImgSeis.style.borderColor = '#D5D9D9';
+    productoImgSiete.style.borderColor = '#D5D9D9';
+    productoImgOcho.style.borderColor = '#D5D9D9';
 });
 productoImgCuatro.addEventListener('click', function() {
-    imgProducto.setAttribute("src","img/auriculares4.jpg");
-    productoImgUno.style.borderColor = '#9F9F9F';
-    productoImgDos.style.borderColor = '#9F9F9F';
-    productoImgTres.style.borderColor = '#9F9F9F';
-    productoImgCuatro.style.borderColor = '#F00';
-
-    let auxValorProducto = new Intl.NumberFormat("de-DE").format(valorProducto4);
-    document.getElementById('precioProducto').innerHTML = auxValorProducto;
+    imgProducto.setAttribute("src","img/auriculares1-4.jpg");
+    productoImgUno.style.borderColor = '#D5D9D9';
+    productoImgDos.style.borderColor = '#D5D9D9';
+    productoImgTres.style.borderColor = '#D5D9D9';
+    productoImgCuatro.style.borderColor = '#FF8F00';
+    productoImgCinco.style.borderColor = '#D5D9D9';
+    productoImgSeis.style.borderColor = '#D5D9D9';
+    productoImgSiete.style.borderColor = '#D5D9D9';
+    productoImgOcho.style.borderColor = '#D5D9D9';
+});
+productoImgCinco.addEventListener('click', function() {
+    imgProducto.setAttribute("src","img/auriculares1-5.jpg");
+    productoImgUno.style.borderColor = '#D5D9D9';
+    productoImgDos.style.borderColor = '#D5D9D9';
+    productoImgTres.style.borderColor = '#D5D9D9';
+    productoImgCuatro.style.borderColor = '#D5D9D9';
+    productoImgCinco.style.borderColor = '#FF8F00';
+    productoImgSeis.style.borderColor = '#D5D9D9';
+    productoImgSiete.style.borderColor = '#D5D9D9';
+    productoImgOcho.style.borderColor = '#D5D9D9';
+});
+productoImgSeis.addEventListener('click', function() {
+    imgProducto.setAttribute("src","img/auriculares1-6.jpg");
+    productoImgUno.style.borderColor = '#D5D9D9';
+    productoImgDos.style.borderColor = '#D5D9D9';
+    productoImgTres.style.borderColor = '#D5D9D9';
+    productoImgCuatro.style.borderColor = '#D5D9D9';
+    productoImgCinco.style.borderColor = '#D5D9D9';
+    productoImgSeis.style.borderColor = '#FF8F00';
+    productoImgSiete.style.borderColor = '#D5D9D9';
+    productoImgOcho.style.borderColor = '#D5D9D9';
+});
+productoImgSiete.addEventListener('click', function() {
+    imgProducto.setAttribute("src","img/auriculares1-7.jpg");
+    productoImgUno.style.borderColor = '#D5D9D9';
+    productoImgDos.style.borderColor = '#D5D9D9';
+    productoImgTres.style.borderColor = '#D5D9D9';
+    productoImgCuatro.style.borderColor = '#D5D9D9';
+    productoImgCinco.style.borderColor = '#D5D9D9';
+    productoImgSeis.style.borderColor = '#D5D9D9';
+    productoImgSiete.style.borderColor = '#FF8F00';
+    productoImgOcho.style.borderColor = '#D5D9D9';
+});
+productoImgOcho.addEventListener('click', function() {
+    imgProducto.setAttribute("src","img/auriculares1-8.jpg");
+    productoImgUno.style.borderColor = '#D5D9D9';
+    productoImgDos.style.borderColor = '#D5D9D9';
+    productoImgTres.style.borderColor = '#D5D9D9';
+    productoImgCuatro.style.borderColor = '#D5D9D9';
+    productoImgCinco.style.borderColor = '#D5D9D9';
+    productoImgSeis.style.borderColor = '#D5D9D9';
+    productoImgSiete.style.borderColor = '#D5D9D9';
+    productoImgOcho.style.borderColor = '#FF8F00';
 });
 
 // Para la lupa

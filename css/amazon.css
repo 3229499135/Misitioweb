@@ -10,10 +10,12 @@
     --amarillo2: #FEBD69;
     --amarillo3: #FFA41C;
     --gris: #333;
-    --gris2: #9f9f9f;
-    --rojo: #f00;
-    --azul: #00f;
+    --gris2: #D5D9D9;
+    --gris3: #9F9F9F;
+    --rojo: #F00;
+    --azul: #00F;
     --verde2: #007185;
+    --anaranjado: #FF8F00;
 }
 
 /* Estilo de la página. */
@@ -301,15 +303,39 @@ span {
     display: block;
     height: 92%;
 }
+.grayBox {
+    width: 200px;
+	height: 200px;
+	background-image: url(../img/1.jpg);
+	background-size:400px 400px;
+	background-position: 0 0;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	position: absolute;
+	left: 0;
+	top: 0;
+	display : none;
+}
 .magnifier {
-    width: 220px; /* Ancho de la lupa */
-    height: 220px; /* Altura de la lupa */
-    border: 2px solid var(--gris);
+    /* width: 220px; */ /* Ancho de la lupa */
+    /* height: 220px; */ /* Altura de la lupa */
+    /* border: 2px solid var(--gris);
     position: absolute;
     cursor: crosshair;
     display: none;
-    background-image: url('../img/auriculares1.jpg'); /* URL de tu imagen */
-    background-size: 450px; /* Ancho del contenedor de la imagen */
+    background-image: url('../img/auriculares1.jpg'); */ /* URL de tu imagen */
+    /* background-size: 450px; */ /* Ancho del contenedor de la imagen */
+    grid-area: texto;
+    width: 400px;
+	height: 400px;
+	position: absolute;
+	left: 700px;
+	top: 100px;
+	border:4px solid var(--rojo);
+	overflow: hidden;
+	display : none;
+}
+.magnifier .img {
+    position: absolute;
 }
 .text {
     height: 410px;
@@ -404,7 +430,7 @@ span {
 /* .container-producto-2 {
     display: none;
 } */
-.producto1, .producto2, .producto3, .producto4/* , .producto5, .producto6, .producto7, .producto8 */ {
+.producto1, .producto2, .producto3, .producto4, .producto5, .producto6, .producto7, .producto8 {
     height: 80px;
     border: 1px solid var(--gris2);
     display: flex;
@@ -419,7 +445,7 @@ span {
 .producto1 {
     height: 80px;
     grid-area: producto1;
-    border-color: var(--rojo);
+    border-color: var(--anaranjado);
 }
 .producto2 {
     height: 80px;
