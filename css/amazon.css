@@ -1,3 +1,17 @@
+:root{
+    --blanco: #FFF;
+    --blanco2: #e6e6e6;
+    --negro-trans: #000000aa;
+    --negro: #000;
+    --negro2: #131921;
+    --negro3: #232f3e;
+    --amarillo2: #FEBD69;
+    --gris: #333;
+    --gris2: #9f9f9f;
+    --rojo: #f00;
+    --azul: #00f;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,19 +21,22 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow: hidden;
 }
+
+/* Para la barra del menú principal */
 header {
-    background-color: #131921;
+    background-color: var(--negro2);
     width: 100%;
     height: 60px;
     display: flex;
     flex-direction: row;
 }
 div {
-    height: 52px;
-    color: white;
+    color: var(--blanco);
     margin: 4px 0;
+}
+.logo-enviar, .barra, .info {
+    height: 52px;
 }
 .logo-enviar {
     width: 260px;
@@ -65,13 +82,13 @@ i {
     width: 100%;
     height: 100%;
     background-color: transparent;
-    color: white;
+    color: var(--blanco);
     font-weight: bold;
     border: none;
     padding: 0;
 }
 .paises {
-    background-color: #000;
+    background-color: var(--negro);
 } */
 .barra {
     width: calc(100% - 652.4px);
@@ -87,7 +104,7 @@ i {
 }
 .option {
     width: 66px;
-    background-color: #e6e6e6;
+    background-color: var(--blanco2);
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
 }
@@ -103,7 +120,7 @@ i {
     align-items: center;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
-    background-color: #febd69;
+    background-color: var(--amarillo2);
 }
 .info {
     width: 392.4px;
@@ -201,16 +218,68 @@ a {
     bottom: 0;
     font-weight: 700;
 }
+
+/* Para la barra que esta bajo de la barra de menú */
+.header2 {
+    font-family: Arial, sans-serif;
+    width: 100%;
+    height: 39px;
+    background-color: var(--negro3);
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+.div-todo {
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    padding: 8px 9px;
+    margin: 0;
+}
+.info-2 {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+span {
+    font-size: 18.92px;
+}
+.oferta, .lista, .servicio, .tarjeta, .vender {
+    font-size: 14px;
+    color: var(--blanco);
+    margin: 5px 0 6px;
+    padding: 8px 9px;
+}
+
+/* Para el contenido de los productos */
 .content {
-    max-width: 80%;
+    max-width: 98%;
     height: 450px;
     display: grid;
-    grid-template: "container-producto-main texto" /
-                    410px                   0.6fr;
+    grid-template: "container-produc    container-producto-main     texto   info-precio-produc" /
+                    60px                1fr                       3fr   200px;
     margin-top: 6px;
-    grid-gap: 100px;
-    color: #000;
+    grid-gap: 20px;
+    color: var(--negro);
     padding: 10px;
+}
+.container-produc {
+    grid-area: container-produc;
+}
+.productoMain1, .productoMain2, .productoMain3, .productoMain4, .productoMain5, .productoMain6 {
+    height: 45px;
+    border: 1px solid var(--azul);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px 7px;
+}
+.img-main-producto {
+    width: 100%;
+    border-radius: 10px;
 }
 .container-producto-main {
     grid-area: container-producto-main;
@@ -230,7 +299,7 @@ a {
 .magnifier {
     width: 220px; /* Ancho de la lupa */
     height: 220px; /* Altura de la lupa */
-    border: 2px solid #333;
+    border: 2px solid var(--gris);
     position: absolute;
     cursor: crosshair;
     display: none;
@@ -243,11 +312,33 @@ a {
     padding: 10px;
 }
 .text-content-main {
-    color: #000;
-    font-size: 19px;
-    font-weight: 540;
+    color: var(--negro);
+    font-size: 24px;
+    font-weight: 410;
     line-height: 32px;
 }
+.info-precio-produc {
+    grid-area: info-precio-produc;
+    border: 1px solid var(--gris2);
+    border-radius: 8px;
+}
+.devolu {
+    font-size: 14px;
+    color: #007185;
+}
+.icono2 {
+    font-size: 14px;
+    margin: 0;
+    color: var(--negro);
+}
+.info-entrega-producto {
+    color: var(--negro);
+}
+.info-detalle {
+    color: #007185;
+}
+
+/* Para el modal */
 .despregable {
     width: 100%;
     height: 100vh;
@@ -257,19 +348,19 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #000000aa;
+    background-color: var(--negro-trans);
 }
 .content-dos {
     max-width: 88%;
     height: 78%;
-    background-color: #fff;
+    background-color: var(--blanco);
     border-radius: 12px;
     display: grid;
     grid-template: "container-producto-main texto" /
                     415px                   0.56fr;
     margin-top: 6px;
     grid-gap: 200px;
-    color: #000;
+    color: var(--negro);
     padding: 10px;
     justify-content: center;
     align-items: center;
@@ -286,7 +377,7 @@ a {
     margin: 12px 0;
 }
 .text-content {
-    color: #000;
+    color: var(--negro);
     font-size: 16px;
     font-weight: 540;
     line-height: 34px;
@@ -294,33 +385,8 @@ a {
 .precio {
     font-size: 18px;
     font-weight: 400;
-    color: #000;
+    color: var(--negro);
     margin-left: 20px;
-}
-.box-button-cantidad {
-    color: #000;
-    grid-area: box-buttons-cantidad;
-    font-size: 1.3em;
-    display: flex;
-    flex-direction: row;
-}
-.box-minus, .box-cant, .box-plus {
-    width: 60px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid rgb(24, 24, 24);
-    font-weight: 600;
-    color: #000;
-}
-.box-minus {
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-}
-.box-plus {
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
 }
 .container-producto {
     height: 84px;
@@ -333,9 +399,9 @@ a {
 /* .container-producto-2 {
     display: none;
 } */
-.producto1, .producto2, .producto3, .producto4 {
+.producto1, .producto2, .producto3, .producto4/* , .producto5, .producto6, .producto7, .producto8 */ {
     height: 80px;
-    border: 1px solid #9f9f9f;
+    border: 1px solid var(--gris2);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -348,7 +414,7 @@ a {
 .producto1 {
     height: 80px;
     grid-area: producto1;
-    border-color: #f00;
+    border-color: var(--rojo);
 }
 .producto2 {
     height: 80px;
@@ -366,20 +432,20 @@ a {
     position: absolute;
     top: 60px;
     right: 80px;
-    color: #000;
+    color: var(--negro);
     cursor: pointer;
 }
 @media screen and (max-width: 450px) {
     /* .logo-enviar {} */
     .content-dos {
         max-width: 88%;
-        background-color: #fff;
+        background-color: var(--blanco);
         border-radius: 12px;
         display: flex;
         flex-direction: column;
         margin-top: 6px;
         grid-gap: 200px;
-        color: #000;
+        color: var(--negro);
         padding: 10px;
         justify-content: center;
         align-items: center;
