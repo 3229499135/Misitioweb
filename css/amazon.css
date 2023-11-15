@@ -5,11 +5,14 @@
     --negro: #000;
     --negro2: #131921;
     --negro3: #232f3e;
+    --amarillo: #FFD814;
     --amarillo2: #FEBD69;
+    --amarillo3: #FFA41C;
     --gris: #333;
     --gris2: #9f9f9f;
     --rojo: #f00;
     --azul: #00f;
+    --verde2: #007185;
 }
 
 * {
@@ -324,7 +327,7 @@ span {
 }
 .devolu {
     font-size: 14px;
-    color: #007185;
+    color: var(--verde2);
 }
 .icono2 {
     font-size: 14px;
@@ -335,7 +338,7 @@ span {
     color: var(--negro);
 }
 .info-detalle {
-    color: #007185;
+    color: var(--verde2);
 }
 
 /* Para el modal */
