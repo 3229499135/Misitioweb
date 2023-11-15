@@ -1,3 +1,4 @@
+/* Colores para el estilo. */
 :root{
     --blanco: #FFF;
     --blanco2: #e6e6e6;
@@ -15,6 +16,7 @@
     --verde2: #007185;
 }
 
+/* Estilo de la página. */
 * {
     margin: 0;
     padding: 0;
