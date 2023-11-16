@@ -14,6 +14,8 @@
     --gris3: #9F9F9F;
     --rojo: #F00;
     --azul: #00F;
+    --azul2: #59a2af;
+    --verde: #78b778;
     --verde2: #007185;
     --anaranjado: #FF8F00;
 }
@@ -249,7 +251,7 @@ a {
     flex-direction: row;
     margin: 0;
 }
-span {
+.icon-menu-amburguesa {
     font-size: 18.92px;
 }
 .oferta, .lista, .servicio, .tarjeta, .vender {
@@ -265,7 +267,7 @@ span {
     height: 450px;
     display: grid;
     grid-template: "container-produc    container-producto-main     texto   info-precio-produc" /
-                    60px                1fr                       3fr   200px;
+                    60px                1fr                         3fr     250px;
     margin-top: 6px;
     grid-gap: 20px;
     color: var(--negro);
@@ -303,44 +305,33 @@ span {
     display: block;
     height: 92%;
 }
-.grayBox {
-    width: 200px;
-	height: 200px;
-	background-image: url(../img/1.jpg);
-	background-size:400px 400px;
-	background-position: 0 0;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-	position: absolute;
-	left: 0;
-	top: 0;
-	display : none;
+.cordenadas {
+    width: 140px;
+    height: 130px;
+    border: 0.5px solid #333;
+    background-color: #fff9;
+    position: absolute;
+    display: none;
 }
 .magnifier {
-    /* width: 220px; */ /* Ancho de la lupa */
-    /* height: 220px; */ /* Altura de la lupa */
-    /* border: 2px solid var(--gris);
+    width: 40.92%; /* Ancho de la lupa */
+    height: 82%; /* Altura de la lupa */
+    border: 2px solid var(--gris);
     position: absolute;
     cursor: crosshair;
     display: none;
-    background-image: url('../img/auriculares1.jpg'); */ /* URL de tu imagen */
-    /* background-size: 450px; */ /* Ancho del contenedor de la imagen */
-    grid-area: texto;
-    width: 400px;
-	height: 400px;
-	position: absolute;
-	left: 700px;
-	top: 100px;
-	border:4px solid var(--rojo);
-	overflow: hidden;
-	display : none;
-}
-.magnifier .img {
-    position: absolute;
+    background-image: url('../img/auriculares1.jpg'); /* URL de tu imagen */
+    background-size: 1500px; /* Ancho del contenedor de la imagen */
+    top: 96px;
+    left: 38%;
 }
 .text {
     height: 410px;
     grid-area: texto;
-    padding: 10px;
+}
+.content-text-one {
+    width: 100%;
+    margin: 10px;
 }
 .text-content-main {
     color: var(--negro);
@@ -348,10 +339,59 @@ span {
     font-weight: 410;
     line-height: 32px;
 }
+.visita-tienda-BENGOO {
+    color: var(--azul2);
+}
+.content-text-thow {
+    margin: 10px;
+}
+.divs-images {
+    display: grid;
+    grid-template: "divs-image-1    divs-image-2    divs-image-3" /
+                    145px            145px          145px;
+    grid-gap: 10px;
+    height: 60px;
+}
+.div-image {
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--gris2);
+    border-radius: 6px;
+}
+.divs-images-1 {
+    grid-area: divs-image-1;
+    border-color: var(--anaranjado);
+}
+.divs-images-2 {
+    grid-area: divs-image-2;
+}
+.divs-images-3 {
+    grid-area: divs-image-3;
+}
+.image {
+    height: 75%;
+    margin: 0 3px 0 0;
+}
+.signo-precio-producto-divs, .precio-producto-divs {
+    font-size: 14px;
+}
 .info-precio-produc {
     grid-area: info-precio-produc;
     border: 1px solid var(--gris2);
     border-radius: 8px;
+    padding: 8px;
+}
+.precio {
+    margin: 0;
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--negro);
+}
+.signo-precio-producto, .precio-producto {
+    font-size: 28px;
 }
 .devolu {
     font-size: 14px;
@@ -363,10 +403,30 @@ span {
     color: var(--negro);
 }
 .info-entrega-producto {
+    font-size: 14px;
     color: var(--negro);
 }
 .info-detalle {
+    font-size: 14px;
     color: var(--verde2);
+}
+.negrilla {
+    font-weight: 600;
+}
+.text-info-entrega-producto-3 {
+    margin: 14px 0;
+}
+.letra-verde {
+    color: var(--verde);
+}
+.enviar-Colombia {
+    color: var(--azul2);
+    margin: 14px 0;
+}
+.icons {
+    font-size: 16px;
+    margin: 0 6px 0 0;
+    color: var(--negro);
 }
 
 /* Para el modal */
@@ -412,12 +472,6 @@ span {
     font-size: 16px;
     font-weight: 540;
     line-height: 34px;
-}
-.precio {
-    font-size: 18px;
-    font-weight: 400;
-    color: var(--negro);
-    margin-left: 20px;
 }
 .container-producto {
     height: 84px;

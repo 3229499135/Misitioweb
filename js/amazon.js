@@ -1,10 +1,15 @@
 // Precio del produto 1 al producto 4
 let valorProducto1 = 435000;
-let valorProducto2 = 400000;
-let valorProducto3 = 430000;
-let valorProducto4 = 420000;
+let valorProducto2 = 430000;
+let valorProducto3 = 420000;
 let auxValorProducto = new Intl.NumberFormat("de-DE").format(valorProducto1);
+let auxValorProducto2 = new Intl.NumberFormat("de-DE").format(valorProducto2);
+let auxValorProducto3 = new Intl.NumberFormat("de-DE").format(valorProducto3);
 document.getElementById('precioProducto').innerHTML = auxValorProducto;
+
+document.getElementById('precioProductoDivsUno').innerHTML = auxValorProducto;
+document.getElementById('precioProductoDivsDos').innerHTML = auxValorProducto2;
+document.getElementById('precioProductoDivsTres').innerHTML = auxValorProducto3;
 
 // Para visualizar el contenedor modal
 let producto = document.getElementById("producto");
@@ -128,14 +133,21 @@ imageContainer.addEventListener('mousemove', (e) => {
     const offsetX = e.clientX - containerRect.left;
     const offsetY = e.clientY - containerRect.top;
 
-    const backgroundX = (offsetX / imageContainer.offsetWidth) * 120;
-    const backgroundY = (offsetY / imageContainer.offsetHeight) * 130;
+    const backgroundX = (offsetX / imageContainer.offsetWidth) * 100;
+    const backgroundY = (offsetY / imageContainer.offsetHeight) * 100;
 
     magnifier.style.backgroundPosition = `${backgroundX}% ${backgroundY}%`;
-    magnifier.style.left = e.clientX - magnifier.offsetWidth / 0.89 + 'px';
-    magnifier.style.top = e.clientY - magnifier.offsetHeight / 1.15 + 'px';
+    /* magnifier.style.left = e.clientX - magnifier.offsetWidth / 2 + 'px';
+    magnifier.style.top = e.clientY - magnifier.offsetHeight / 2 + 'px'; */
     magnifier.style.display = 'block';
 });
+imageContainer.addEventListener('mousemove', (e) => {
+    cordenadas.style.left = e.clientX - cordenadas.offsetWidth / 0.78 + 'px';
+    cordenadas.style.top = e.clientY - cordenadas.offsetHeight / 0.78 + 'px';
+    cordenadas.style.display = 'block';
+});
+
 imageContainer.addEventListener('mouseleave', () => {
     magnifier.style.display = 'none';
+    cordenadas.style.display = 'none';
 });
