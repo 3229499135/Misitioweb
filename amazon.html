@@ -8,9 +8,11 @@
   <link rel="stylesheet" href="icons/all.css">
   <link rel="shortcut icon" href="img/favicon-amazon.png" type="image/png">
   <script defer src="js/amazon.js"></script>
+  <script defer src="js/amazon2.js"></script>
   <title>Amazon</title>
 </head>
 <body>
+  <!-- Header -->
   <header>
     <div class="logo-enviar">
       <div class="logo-amazon">
@@ -85,36 +87,50 @@
       <a href="#" class="vender">Vender</a>
     </div>
   </div>
+  <div class="header3">
+    <div class="header-3-interno">
+      <div class="img-header-3">
+        <img src="img/auriculares1.jpg" alt="" class="img-header-3-interno">
+      </div>
+      <div class="text-header-3">Egghead Skylab - Auriculares estéreo LED multimedia para juegos, audífinos sobre la oreja con control de volumen y micrófono flexible con cancelación de ruido</div>
+      <div class="precio-unitario">$22<j class="number-tamaño">85</j></div>
+      <div class="icon-prime"><i class="icons-prime fa-solid fa-check"></i>Prime</div>
+    </div>
+  </div>
+  <!-- Contenido Principal -->
   <div class="content">
-    <div class="container-produc">
+    <div class="container-produc" id="aa">
       <div class="productoMain1" id="productoImgMainUno">
         <img class="img-producto" src="img/auriculares1.jpg" alt="producto">
       </div>
       <div class="productoMain2" id="productoImgMainDos">
-        <img class="img-main-producto" src="img/auriculares1-2.jpg" alt="">
+        <img class="img-main-producto" src="img/auriculares1-2.jpg" alt="producto">
       </div>
       <div class="productoMain3" id="productoImgMainTres">
-        <img class="img-main-producto" src="img/auriculares1-3.jpg" alt="">
+        <img class="img-main-producto" src="img/auriculares1-3.jpg" alt="producto">
       </div>
       <div class="productoMain4" id="productoImgMainCuatro">
-        <img class="img-main-producto" src="img/auriculares1-4.jpg" alt="">
+        <img class="img-main-producto" src="img/auriculares1-4.jpg" alt="producto">
       </div>
       <div class="productoMain5" id="productoImgMainCinco">
         <img class="img-main-producto" src="img/auriculares1-5.jpg" alt="producto">
       </div>
       <div class="productoMain6" id="productoImgMainSeis">
-        <img class="img-main-producto" src="img/auriculares1-6.jpg" alt="">
+        <img class="img-main-producto" src="img/auriculares1-6.jpg" alt="producto">
       </div>
     </div>
-    <div class="container-producto-main" id="producto">
-      <img id="original-image" class="producto" src="img/auriculares1.jpg" alt="Imagen principal del producto">
-      <div  class="cordenadas" id="cordenadas"></div>
+    <div class="container-producto-main">
+      <div class="content-img" id="producto">
+        <img id="original-image" class="producto" src="img/auriculares1.jpg" alt="Imagen principal del producto">
+        <div  class="cordenadas" id="cordenadas"></div>
+      </div>
+      <p>Pasa el mause encima de la imagen para aplicar zoom</p>
     </div>
     <div id="magnifier" class="magnifier"></div>
     <div class="text">
       <div class="content-text-one">
         <div>
-          <p class="text-content-main">BENGOO G9000 - Auriculares estéreo para juegos para PS4, PC, Xbox One PS5, cancelación de ruido, auriculares con micrófono, luz LED, sonido envolvente de bajos, orejeras de memoria suave para portátil, Mac, Nintendo NES Games</p>
+          <p class="text-content-main" id="text1">BENGOO G9000 - Auriculares estéreo para juegos para PS4, PC, Xbox One PS5, cancelación de ruido, auriculares con micrófono, luz LED, sonido envolvente de bajos, orejeras de memoria suave para portátil, Mac, Nintendo NES Games</p>
         </div>
         <div>
           <a href="#" class="visita-tienda-BENGOO">Visita la tienda de BENGOO</a>
@@ -122,12 +138,23 @@
       </div>
       <hr>
       <div class="content-text-thow">
+        <div class="info-of-precio">
+          <div class="minus-porcent">-43 %</div>
+          <div class="info-of-valor">US$<j class="number-valor">22</j>99</div>
+        </div>
+        <div class="precio-recomendado">Precio recomendado <j class="info-precio-recomendado">US$39.99</j></div>
+        <div class="text-thow-primary color-info"> Devoluciones GRATIS <i class="icono2 fa-solid fa-angle-down"></i></div>
+        <div class="text-thow-primary text-thow-primary1">Sin dispósito de derechos de importación y US$11.42 de envío de Colombia <j class="color-info">Detalles</j> <i class="icono2 fa-solid fa-angle-down"></i></div>
+        <div class="text-thow-primary text-thow-primary2">Disponible a precio menor de <j class="color-info">Otros vendedores</j> que podrían no ofrecer envío Prime gratis.</div>
+        <div class="text-thow-primary text-thow-primary3">
+          <p class="text-prima">Color: <j class="color" id="text2">Azul</j></p>
+        </div>
         <div class="divs-images">
           <div class="div-image divs-images-1">
             <img src="img/auriculares1.jpg" alt="" class="image">
             <div class="precio">Cop <span class="signo-precio-producto-divs">$</span><span class="precio-producto-divs" id="precioProductoDivsUno">0</span></div>
           </div>
-          <div class="div-image divs-images-2">
+          <div class="div-image divs-images-2" id="auriculares2">
             <img src="img/auriculares2.jpg" alt="" class="image">
             <div class="precio">Cop <span class="signo-precio-producto-divs">$</span><span class="precio-producto-divs" id="precioProductoDivsDos">0</span></div>
           </div>
@@ -136,10 +163,49 @@
             <div class="precio">Cop <span class="signo-precio-producto-divs">$</span><span class="precio-producto-divs" id="precioProductoDivsTres">0</span></div>
           </div>
         </div>
+        <div>
+          <table class="table-info-producto">
+            <tr>
+              <th class="th-left-of-content-center">Marca</th>
+              <td class="td-table-content">BENGOO</td>
+            </tr>
+            <tr>
+              <th class="th-left-of-content-center">Nombre del modelo</th>
+              <td class="td-table-content">G9000</td>
+            </tr>
+            <tr>
+              <th class="th-left-of-content-center">Color</th>
+              <td class="td-table-content">Azul</td>
+            </tr>
+            <tr>
+              <th class="th-left-of-content-center">Factor de forma</th>
+              <td class="td-table-content">Por Arriba de la Oreja</td>
+            </tr>
+            <tr>
+              <th class="th-left-of-content-center">Tecnología de conectividad</th>
+              <td class="td-table-content">Alámbrico</td>
+            </tr>
+          </table>
+        </div>
       </div>
       <hr>
+      <div class="info-sobre-producto">
+        <div class="sobre-el-articulo">Sobre este articulo</div>
+        <div class="text-info-articulo">
+          <ul class="info-text-info-articulo">
+            <li>Compatible con múltiples plataformas: compatible con PlayStation 4, nueva Xbox One, PC, Nintendo 3DS, laptop, PSP, tableta, iPad, computadora, teléfono móvil. Tenga en cuenta que necesita un adaptador Microsoft adicional (no incluido) cuando se conecta con un controlador Xbox One versión antigua.</li>
+            <li>Subwoofer estéreo envolvente: sonido claro que funciona con latón fuerte, espléndido aislamiento de ruido ambiental y controlador de neodimio magnético de alta precisión de 1.575 pulgadas, precisión de posicionamiento acústico mejora la sensibilidad de la unidad de altavoz, lo que te ofrece un campo de sonido vívido, claridad de sonido, sonido de sensación de impacto. Perfecto para varios juegos como Halo 5 Guardians, Metal Gear Solid, Call of Duty, Star Wars Battlefront, Overwatch, World of Warcraft Legion, etc.</li>
+            <li>Micrófono de aislamiento de ruido: el micrófono onmi-direccional integrado con auriculares puede transmitir comunicación de alta calidad con su función de detección de ruido premium, puede captar sonidos con gran sensibilidad y eliminar el ruido, lo que te permite entregar o recibir mensajes claramente mientras estás en un juego. Diseño de micrófono flexible largo muy conveniente para ajustar el ángulo del micrófono.</li>
+            <li>Gran diseño humanizado: almohadillas de proteína de permeabilidad al aire superior, cómodas y de buena permeabilidad al aire, viga de cabeza de múltiples puntos, cuerda de cuerda con especificaciones de ingeniería del cuerpo humano que puede reducir la discapacidad auditiva y el sudor térmico. Material de cuero respetuoso con la piel para un período de uso más prolongado. Las luces LED deslumbrantes están diseñadas en los auriculares para resaltar la atmósfera del juego.</li>
+            <li>Control de volumen sin esfuerzo: cable USB trenzado de alta resistencia a la tracción, antienrollamiento con controlador de volumen giratorio y silencio de micrófono de tecla, evita eficazmente que el cable de 49 pulgadas de largo se enrosque y te permite controlar el volumen fácilmente y silenciar el micrófono como control de volumen sin esfuerzo con una tecla.</li>
+          </ul>
+          <br>
+          <p><j class="nota">Nota:</j> Los productos con enchufes eléctricos están diseñados para usarse en EE. UU. Las tomas de corriente y la tensión difieren a nivel internacional. Es posible que este producto requiera un adaptador o conversor para poder usarse en su destino. Comprueba la compatibilidad antes de comprar.</p>
+        </div>
+      </div>
     </div>
-      <div class="info-precio-produc">
+    <div class="info-precio-produc">
+      <div class="info-precio-produc-interno">
         <div class="precio">Cop <span class="signo-precio-producto">$</span><span class="precio-producto" id="precioProducto">0</span></div>
         <span><a href="#" class="devolu">Devolucion GRATIS <i class="icono2 fa-solid fa-angle-down"></i></a></span>
         <div class="info-entrega-producto">
@@ -150,43 +216,129 @@
         <div>
           <a href="#" class="enviar-Colombia"><i class="fa-solid fa-location-dot fa-beat-fade icons"></i>Enviar a Colombia</a>
         </div>
+        <div class="cantidad-carrito">
+          <div>
+            <p class="letra-verde disponible">Disponible</p>
+          </div>
+          <select name="" id="" class="select-cant" placeholder="Cantidad:">
+            <option value="">Cantidad: 1</option>
+          </select>
+          <div class="btns">
+            <button class="btn agregar-carrito">Agregar al Carrito</button>
+            <button class="btn comprar-ahora">Comprar ahora</button>
+          </div>
+          <div>
+            <table class="table-info-producto-rigth">
+              <tr>
+                <td class="td-left-of-content-rigth">Enviado por</td>
+                <td class="td-amazon">Amazon</td>
+              </tr>
+              <tr>
+                <td class="td-left-of-content-rigth">Vendido por</td>
+                <td class="color-info">Bengoo Inc.</td>
+              </tr>
+              <tr>
+                <td class="td-left-of-content-rigth">Devoluciones</td>
+                <td class="color-info">Se puede devolver hasta el 31 de enero de 2024</td>
+              </tr>
+              <tr>
+                <td class="td-left-of-content-rigth">Pago</td>
+                <td class="color-info">Transacion segura</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="agregar-recibo">
+          <input type="checkbox" name="" id="" class="input1">
+          <p class="tex-info-recibo">Agregar un recibo de regalo para facilitar las devoluciones</p>
+        </div>
+        <hr>
+        <div class="agregar-lista">Agregar a la lista</div>
       </div>
+      <div class="agregar-accesorios">
+        <div class="agregar-accesorio">Agregar un accesorio</div>
+        <hr>
+        <div class="combo-teclado">
+          <p class="color-info">KOORUI Combo de teclado y mause inalámbricos, teclado silencioso de tamaño complet...</p>
+          <div class="precio-plus-btn">
+            <p class="us-precio">US$21.98</p>
+            <button class="btn-agregar-carro">Agregar al carrito</button>
+          </div>
+        </div>
+        <hr>
+        <div class="combo-teclado">
+          <p class="color-info">KOORUI Teclado mecánico ultracompacto con 60% de 61 teclas con cable retroiluminad...</p>
+          <div class="precio-plus-btn">
+            <p class="us-precio">US$29.99</p>
+            <button class="btn-agregar-carro">Agregar al carrito</button>
+          </div>
+        </div>
+        <hr>
+        <div class="combo-teclado">
+          <p class="color-info">KOORUI Teclados para juegos, 82 teclas, teclado mecánico de 26 teclas con retroiluminación...</p>
+          <div class="precio-plus-btn">
+            <p class="us-precio">US$47.98</p>
+            <button class="btn-agregar-carro">Agregar al carrito</button>
+          </div>
+        </div>
+        <hr>
+        <div class="combo-teclado teclado-of-104-teclas">
+          <p class="color-info">KOORUI Teclados para juegos, 104 teclas, teclado mecánico de tamaño completo con cable 26...</p>
+          <div class="precio-plus-btn">
+            <p class="us-precio">US$47.78</p>
+            <button class="btn-agregar-carro">Agregar al carrito</button>
+          </div>
+        </div>
+      </div>
+      <div class="text-nuevo">Nuevo 5 desde <v class="order-inicio"><j class="tamano">US$</j>22<j class="tamano">99</j></v></div>
     </div>
-    <div class="despregable" id="despregable">
-      <div class="content-dos">
-        <div>Videos</div>
-        <div>Imagense</div>
-        <div id="btnX" class="btn-x"><i class="style-btn2 fa-solid fa-x"></i></div>
+  </div>
+  <hr class="hr-fin">
+  <!-- Modal -->
+  <div class="despregable" id="despregable">
+    <div class="content-dos">
+      <div class="header-modal">
+        <div class="header-modal-interno">
+          <div class="text-video-image">
+            <div class="text-video">Videos</div>
+            <div class="text-image">Imagense</div>
+          </div>
+          <div id="btnX" class="btn-x"><i class="style-btn2 fa-solid fa-x"></i></div>
+        </div>
+        <hr>
+      </div>
+      <div class="content-producto-parte-dos">
         <div class="container-producto-main-dos" id="producto">
-          <img class="producto" id="imgProducto" src="img/auriculares1.jpg" alt="Producto primario">
+          <img class="producto-main-dos" id="imgProducto" src="img/auriculares1.jpg" alt="Producto primario">
         </div>
         <div class="text">
           <p class="text-content">BENGOO G9000 - Auriculares estéreo para juegos para PS4, PC, Xbox One PS5, cancelación de ruido, auriculares con micrófono, luz LED, sonido envolvente de bajos, orejeras de memoria suave para portátil, Mac, Nintendo NES Games</p>
           <div class="container-producto">
-            <div class="producto1" id="productoImgUno">
+            <div class="productos-divs-modal producto1" id="productoImgUno">
               <img class="img-producto" src="img/auriculares1.jpg" alt="producto">
             </div>
-            <div class="producto2" id="productoImgDos">
-              <img class="img-producto" src="img/auriculares1-2.jpg" alt="">
+            <div class="productos-divs-modal producto2" id="productoImgDos">
+              <img class="img-producto" src="img/auriculares1-2.jpg" alt="producto">
             </div>
-            <div class="producto3" id="productoImgTres">
-              <img class="img-producto" src="img/auriculares1-3.jpg" alt="">
+            <div class="productos-divs-modal producto3" id="productoImgTres">
+              <img class="img-producto" src="img/auriculares1-3.jpg" alt="producto">
             </div>
-            <div class="producto4" id="productoImgCuatro">
-              <img class="img-producto" src="img/auriculares1-4.jpg" alt="">
+            <div class="productos-divs-modal producto4" id="productoImgCuatro">
+              <img class="img-producto" src="img/auriculares1-4.jpg" alt="producto">
             </div>
-            <div class="producto5" id="productoImgCinco">
+            <div class="productos-divs-modal producto5" id="productoImgCinco">
               <img class="img-producto" src="img/auriculares1-5.jpg" alt="producto">
             </div>
-            <div class="producto6" id="productoImgSeis">
-              <img class="img-producto" src="img/auriculares1-6.jpg" alt="">
+            <div class="productos-divs-modal producto6" id="productoImgSeis">
+              <img class="img-producto" src="img/auriculares1-6.jpg" alt="producto">
             </div>
-            <div class="producto7" id="productoImgSiete">
-              <img class="img-producto" src="img/auriculares1-7.jpg" alt="">
+            <div class="productos-divs-modal producto7" id="productoImgSiete">
+              <img class="img-producto" src="img/auriculares1-7.jpg" alt="producto">
             </div>
-            <div class="producto8" id="productoImgOcho">
-              <img class="img-producto" src="img/auriculares1-8.jpg" alt="">
+            <div class="productos-divs-modal producto8" id="productoImgOcho">
+              <img class="img-producto" src="img/auriculares1-8.jpg" alt="producto">
             </div>
+          </div>
         </div>
       </div>
     </div>

@@ -51,7 +51,7 @@ iconChevronLeft.addEventListener("click", function() {
 
 // Para que el slider sea automatico.
 // Este es funcional
-document.addEventListener("DOMContentLoaded", function () {
+/* document.addEventListener("DOMContentLoaded", function () {
   var currentSlide = 0;
   var slides = document.querySelectorAll(".box-slider .box");
   var totalSlides = slides.length;
@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   iconChevronLeft.addEventListener("click", previousSlide);
   iconChevronRight.addEventListener("click", nextSlide);
-});
+}); */
 
 
 
@@ -160,7 +160,7 @@ var autoSlideInterval = setInterval(nextSlide, 3000); */
 
 
 // Este es funcional
-/* let boxslider = document.getElementById('boxSlider');
+let boxslider = document.getElementById('boxSlider');
 let currentSlider = 1;
 let totalSlaider = 4;
 let autoSlaiderInterval;
@@ -183,7 +183,7 @@ function startAutoSlider() {
   }, 5000);
 }
 
-startAutoSlider(); */
+startAutoSlider();
 
 
 

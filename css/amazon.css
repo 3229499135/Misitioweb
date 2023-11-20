@@ -2,6 +2,7 @@
 :root{
     --blanco: #FFF;
     --blanco2: #e6e6e6;
+    --blanco3: #f6f7f8;
     --negro-trans: #000000aa;
     --negro: #000;
     --negro2: #131921;
@@ -13,9 +14,11 @@
     --gris2: #D5D9D9;
     --gris3: #9F9F9F;
     --rojo: #F00;
+    --rojo2: #ae2e0f;
     --azul: #00F;
     --azul2: #59a2af;
-    --verde: #78b778;
+    --azul3: #439fc5;
+    --verde: #2a9c2a;
     --verde2: #007185;
     --anaranjado: #FF8F00;
 }
@@ -39,9 +42,9 @@ header {
     height: 60px;
     display: flex;
     flex-direction: row;
+    color: var(--blanco);
 }
 div {
-    color: var(--blanco);
     margin: 4px 0;
 }
 .logo-enviar, .barra, .info {
@@ -137,6 +140,7 @@ i {
     flex-direction: row;
 }
 a {
+    color: var(--blanco);
     text-decoration: none;
 }
 .idioma {
@@ -245,8 +249,10 @@ a {
     align-items: center;
     padding: 8px 9px;
     margin: 0;
+    color: var(--blanco);
 }
 .info-2 {
+    width: 80%;
     display: flex;
     flex-direction: row;
     margin: 0;
@@ -259,18 +265,72 @@ a {
     color: var(--blanco);
     margin: 5px 0 6px;
     padding: 8px 9px;
+    display: flex;
+    align-items: center;
+}
+
+/* Para el header 3 */
+.header3 {
+    width: 100%;
+    height: 52px;
+    background-color: var(--blanco3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-size: 14px;
+}
+.header-3-interno {
+    max-width: 1100px;
+    display: grid;
+    grid-template: "img-header-3    text-header-3   precio-unitario   icon-prime"/
+                    27px            1fr             52px                58px;
+    grid-gap: 6px;
+    flex-direction: row;
+    align-items: center;
+}
+.img-header-3 {
+    grid-area: img-header-3;
+    height: 96%;
+    margin: 0 8px 0 0;
+}
+.img-header-3-interno {
+    width: 20px;
+}
+.text-header-3 {
+    grid-area: text-header-3;
+    font-size: 12.2px;
+    font-weight: 550;
+}
+.precio-unitario {
+    grid-area: precio-unitario;
+    font-size: 20px;
+    display: flex;
+    justify-content: start;
+    color: var(--rojo2);
+}
+.number-tamaño {
+    font-size: 11px;
+}
+.icon-prime {
+    grid-area: icon-prime;
+    color: var(--azul3);
+    display: flex;
+    flex-direction: row;
+}
+.icons-prime {
+    color: var(--amarillo);
+    margin: 1px;
 }
 
 /* Para el contenido de los productos */
 .content {
     max-width: 98%;
-    height: 450px;
     display: grid;
     grid-template: "container-produc    container-producto-main     texto   info-precio-produc" /
-                    60px                1fr                         3fr     250px;
+                    60px                    1.1fr                         2fr     250px;
     margin-top: 6px;
-    grid-gap: 20px;
-    color: var(--negro);
+    grid-gap: 16px;
     padding: 10px;
 }
 .container-produc {
@@ -294,16 +354,33 @@ a {
     grid-area: container-producto-main;
     position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 400px;
-    height: 410px;
+    height: 21%;
+    cursor: pointer;
     overflow: hidden;
+    font-size: 12px;
+    font-weight: 500;
+}
+.content-img {
+    height: 92%;
 }
 .producto {
-    max-width: 100%;
+    width: 100%;
     display: block;
-    height: 92%;
+    height: 100%;
+}
+.producto:hover::after {
+    content: 'Haz click para ampliar el contenedor madal';
+    background-color: #ffF;
+    z-index: 1000;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 99%;
+    display: flex;
+    justify-content: center;
 }
 .cordenadas {
     width: 140px;
@@ -314,7 +391,7 @@ a {
     display: none;
 }
 .magnifier {
-    width: 40.92%; /* Ancho de la lupa */
+    width: 48%; /* Ancho de la lupa */
     height: 82%; /* Altura de la lupa */
     border: 2px solid var(--gris);
     position: absolute;
@@ -323,10 +400,9 @@ a {
     background-image: url('../img/auriculares1.jpg'); /* URL de tu imagen */
     background-size: 1500px; /* Ancho del contenedor de la imagen */
     top: 96px;
-    left: 38%;
+    left: 31.9%;
 }
 .text {
-    height: 410px;
     grid-area: texto;
 }
 .content-text-one {
@@ -334,16 +410,52 @@ a {
     margin: 10px;
 }
 .text-content-main {
-    color: var(--negro);
     font-size: 24px;
     font-weight: 410;
     line-height: 32px;
 }
 .visita-tienda-BENGOO {
+    font-size: 14px;
     color: var(--azul2);
 }
 .content-text-thow {
     margin: 10px;
+}
+.info-of-precio {
+    display: flex;
+    flex-direction: row;
+}
+.minus-porcent {
+    font-size: 24px;
+    color: var(--rojo);
+    margin: 0 6px 0 0;
+}
+.info-of-valor {
+    display: flex;
+    justify-content: start;
+    font-size: 16px;
+    color: var(--negro);
+    margin: 0 6px;
+}
+.number-valor {
+    font-size: 24px;
+}
+.precio-recomendado {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: var(--negro);
+}
+.info-precio-recomendado {
+    text-decoration: line-through;
+}
+.text-thow-primary {
+    font-size: 14px;
+}
+.text-prima {
+    margin: 12px 0;
+}
+.color {
+    font-weight: 600;
 }
 .divs-images {
     display: grid;
@@ -360,6 +472,7 @@ a {
     align-items: center;
     border: 1px solid var(--gris2);
     border-radius: 6px;
+    cursor: pointer;
 }
 .divs-images-1 {
     grid-area: divs-image-1;
@@ -375,11 +488,36 @@ a {
     height: 75%;
     margin: 0 3px 0 0;
 }
+.table-info-producto {
+    color: var(--negro);
+}
+.table-info-producto .th-left-of-content-center {
+    text-align: left;
+    font-weight: 600;
+    padding: 2px 10px 2px 0;
+}
+.td-table-content {
+    padding: 2px;
+}
+.info-sobre-producto {
+    margin: 10px;
+}
+.sobre-el-articulo, .nota {
+    font-weight: 600;
+}
+.text-info-articulo {
+    font-size: 14px;
+}
+.info-text-info-articulo {
+    margin-left: 20px;
+}
 .signo-precio-producto-divs, .precio-producto-divs {
     font-size: 14px;
 }
 .info-precio-produc {
     grid-area: info-precio-produc;
+}
+.info-precio-produc-interno {
     border: 1px solid var(--gris2);
     border-radius: 8px;
     padding: 8px;
@@ -388,7 +526,6 @@ a {
     margin: 0;
     font-size: 13px;
     font-weight: 400;
-    color: var(--negro);
 }
 .signo-precio-producto, .precio-producto {
     font-size: 28px;
@@ -400,11 +537,9 @@ a {
 .icono2 {
     font-size: 14px;
     margin: 0;
-    color: var(--negro);
 }
 .info-entrega-producto {
     font-size: 14px;
-    color: var(--negro);
 }
 .info-detalle {
     font-size: 14px;
@@ -414,77 +549,214 @@ a {
     font-weight: 600;
 }
 .text-info-entrega-producto-3 {
-    margin: 14px 0;
+    margin: 13px 0;
 }
 .letra-verde {
     color: var(--verde);
 }
 .enviar-Colombia {
     color: var(--azul2);
-    margin: 14px 0;
+    margin: 13px 0;
 }
 .icons {
     font-size: 16px;
     margin: 0 6px 0 0;
     color: var(--negro);
 }
+.cantidad-carrito {
+    margin: 13px 0;
+}
+.disponible {
+    font-size: 18px;
+    font-weight: 550;
+    margin: 0 0 8px 0;
+}
+.select-cant {
+    height: 25px;
+    margin: 8px 0;
+    border-radius: 6px;
+}
+.btns {
+    display: flex;
+    flex-direction: column;
+}
+.btn {
+    height: 36px;
+    font-weight: 550;
+    margin: 6px 0;
+    border: none;
+    border-radius: 20px;
+}
+.agregar-carrito {
+    background-color: var(--amarillo);
+}
+.comprar-ahora {
+    background-color: var(--amarillo3);
+}
+.table-info-producto-rigth {
+    font-size: 13px;
+}
+.td-left-of-content-rigth {
+    padding: 2px 6px 2px 0;
+    display: flex;
+    justify-content: start;
+}
+.td-amazon {
+    font-weight: 520;
+}
+.color-info {
+    color: var(--azul2);
+}
+.agregar-recibo {
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+.input1 {
+    margin: 6px;
+    float: left;
+}
+.tex-info-recibo {
+    display: flex;
+    margin: 0 6px;
+    justify-content: start;
+}
+.agregar-lista {
+    font-size: 14px;
+    border: 1px solid var(--negro);
+    border-radius: 8px;
+    padding: 6px;
+    margin: 10px 0;
+}
+.agregar-accesorios {
+    border: 1px solid var(--gris2);
+    border-radius: 8px;
+    margin: 18px 0;
+    font-size: 14.2px;
+}
+.agregar-accesorio {
+    text-align: center;
+    font-weight: 600;
+}
+.combo-teclado {
+    padding: 8px;
+}
+.teclado-of-104-teclas {
+    font-size: 14px;
+}
+.precio-plus-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.us-precio {
+    font-size: 16px;
+    color: var(--rojo);
+}
+.btn-agregar-carro {
+    background-color: var(--amarillo);
+    border: none;
+    border-radius: 20px;
+    padding: 5px 7px;
+}
+.text-nuevo {
+    font-size: 14px;
+    border: 1px solid var(--gris2);
+    border-radius: 8px;
+    margin: 18px 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+hr {
+    color: var(--gris2);
+}
+.order-inicio {
+    display: flex;
+    justify-content: start;
+    margin: 0 6px;
+}
+.tamano {
+    font-size: 10px;
+}
 
 /* Para el modal */
 .despregable {
     width: 100%;
     height: 100vh;
-    visibility: hidden;
-    position: absolute;
+    position: fixed;
     top: 0;
-    display: flex;
+    left: 0;
+    display: none;
     justify-content: center;
     align-items: center;
     background-color: var(--negro-trans);
 }
 .content-dos {
-    max-width: 88%;
-    height: 78%;
+    width: 88%;
     background-color: var(--blanco);
     border-radius: 12px;
-    display: grid;
-    grid-template: "container-producto-main texto" /
-                    415px                   0.56fr;
     margin-top: 6px;
-    grid-gap: 200px;
-    color: var(--negro);
     padding: 10px;
     justify-content: center;
     align-items: center;
+}
+.header-modal {
+    width: 100%;
+    height: 35px;
+    position: relative;
+    top: 0;
+}
+.header-modal-interno {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.text-video-image {
+    display: flex;
+    flex-direction: row;
+}
+.text-video {
+    margin: 10px;
+}
+.text-image {
+    margin: 10px;
+}
+.content-producto-parte-dos {
+    display: grid;
+    grid-template: "container-producto-main  texto" /
+                    1fr                      380px;
+    margin-top: 6px;
+    grid-gap: 20px;
 }
 .container-producto-main-dos {
     grid-area: container-producto-main;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 400px;
     height: 410px;
+}
+.producto-main-dos {
+    height: 100%;
 }
 .text-content, .precio-producto, .container-producto {
     margin: 12px 0;
 }
 .text-content {
     color: var(--negro);
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 540;
     line-height: 34px;
 }
 .container-producto {
-    height: 84px;
-    margin-top: 30px;
+    margin-top: 20px;
     display: grid;
-    grid-template: "producto1   producto2   producto3   producto4" /
-                    80px        80px        80px        80px;
+    grid-template-columns: repeat(4, 80px);
+    grid-template-rows: repeat(3, 80px);
     grid-gap: 8px;
 }
-/* .container-producto-2 {
-    display: none;
-} */
-.producto1, .producto2, .producto3, .producto4, .producto5, .producto6, .producto7, .producto8 {
+.productos-divs-modal {
     height: 80px;
     border: 1px solid var(--gris2);
     display: flex;
@@ -498,26 +770,18 @@ a {
 }
 .producto1 {
     height: 80px;
-    grid-area: producto1;
     border-color: var(--anaranjado);
 }
 .producto2 {
     height: 80px;
-    grid-area: producto2;
 }
 .producto3 {
     height: 80px;
-    grid-area: producto3;
 }
 .producto4 {
     height: 80px;
-    grid-area: producto4;
 }
 .btn-x {
-    position: absolute;
-    top: 60px;
-    right: 80px;
-    color: var(--negro);
     cursor: pointer;
 }
 @media screen and (max-width: 450px) {
@@ -530,7 +794,6 @@ a {
         flex-direction: column;
         margin-top: 6px;
         grid-gap: 200px;
-        color: var(--negro);
         padding: 10px;
         justify-content: center;
         align-items: center;
@@ -546,12 +809,6 @@ a {
     .text-content {
         display: none;
     }
-    .precio {
-        display: none;
-    }
-    /* .container-producto-1 {
-        display: none;
-    } */
 }
 
 

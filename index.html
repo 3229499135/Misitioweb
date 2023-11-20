@@ -6,68 +6,302 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/favicon.png" type="image/png">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="icons/all.css">
+    <script defer src="js/vanilla-tilt.js"></script>
     <script defer src="js/script.js"></script>
     <title>Mi página</title>
 </head>
 <body>
-    <!-- Presentación -->
-    <h1> Bienvenido a mi página </h1>
-    <div class="box">
-        <div class="subtitulos">
-            <div>
-                <h2 class="letras">Autor: Jose Alejandro Velez Muñoz.</h2>
-                <h2 class="letras">Analisis y Desarrollo de Software.</h2>
-            </div>
-            <div class="buscar1" id="buscar1">
-                <input type="text" id="sear1" placeholder="Buscar">
-            </div>
-            <div class="buscar2" id="buscar2">
-                <input type="text" id="sear2" placeholder="Buscar">
-            </div>
+    <!-- Header -->
+    <header>
+        <div class="logo">Jose Alejandro Velez</div><!-- Tu Nombre -->
+        <div class="buscar1" id="buscar1">
+            <input type="text" id="sear1" placeholder="Buscar">
         </div>
-        <img src="img/foto-aprendiz.png" alt="Foto del Aprendiz">
+        <div class="buscar2" id="buscar2">
+            <input type="text" id="sear2" placeholder="Buscar">
+        </div>
+        <div class="hora" id="hora"></div>
+    </header>
+    <!-- link de los contenidos de sección de la página -->
+    <div class="navbar-container">
+        <a href="#sobre-mi" class="icon-container">
+          <i class="icon fa-solid fa-user"></i>
+        </a>
+        <a href="#proyectos" class="icon-container">
+          <i class="icon fa-solid fa-laptop-code"></i>
+        </a>
+        <a href="#contacto" class="icon-container">
+          <i class="icon fa-solid fa-contact-book"></i>
+        </a>
     </div>
-    <!-- Botones -->
-    <div class="botones">
-        <button id="trabajos">Trabajos</button>
-        <button id="practicas">Practicas</button>
-    </div>
-    <h3 class="letras">Menu</h3>
-    <!-- Menú del boton de los trabajos -->
-    <ul class="menu-1" id="menuUno">
-        <li><a href="fuentes-1.html">Game of Thrones</a></li>
-        <li><a href="fuentes-2.html">Fuentes Neflix</a></li>
-        <li><a href="fuente-disney.html">Fuentes Disney</a></li>
-        <li><a href="colores.html">colores</a></li>
-        <li><a href="fuentes.html">Mi sitio web</a></li>
-        <li><a href="fuentes-local.html">Fuentes descargadas para uso local</a></li>
-        <li><a href="listas.html">Listas</a></li>
-        <li><a href="margins.html">Margen</a></li>
-        <li><a href="catalogo.html">Catalogo</a></li>
-        <li><a href="tablas.html">Tablas</a></li>
-        <li><a href="formularios.html">Formularios</a></li>
-        <li><a href="menu-iconos.html">Menu Iconos</a></li>
-        <li><a href="menu-sena.html">Menu Sena</a></li>
-        <li><a href="media-query.html">Media Query</a></li>
-        <li><a href="menu-subitems.html">Menu subitems</a></li>
-        <li><a href="toglee.html">Toglee</a></li>
-        <li><a href="flexbox.html">Flexbox</a></li>
-        <li><a href="grid.html">Grid</a></li>
-        <li><a href="maquetacion.html">Maquetación</a></li>
-        <li><a href="maquetacion2.html">Maquetación 2</a></li>
-        <li><a href="slider.html">Slider</a></li>
-        <li><a href="carrito.html">Carrito de ventas</a></li>
-        <li><a href="amazon.html">Amazon</a></li>
-    </ul>
-    <!-- Menú del boton de practica -->
-    <ul class="menu-2" id="menuDos">
-        <li><a href="transition.html">transición</a></li>
-        <li><a href="pocisionamiento.html">Pocisionamiento</a></li>
-        <li><a href="header.html">Header</a></li>
-        <li><a href="main-img.html">Main IMG</a></li>
-        <li><a href="imgs.html">IMGS</a></li>
-    </ul>
+    <!-- Presentación -->
+    <section id="sobre-mi">
+      <h1 class="title-principal">Bienvenido a mi página</h1>
+      <h2>Sobre Mí</h2>
+      <!-- Contenido sobre ti -->
+      <img src="img/foto-aprendiz.png" alt="Foto del Aprendiz" class="user">
+      <h4>Jose Alejandro Velez Muñoz</h4>
+      <h4>Centro de Gestión de Desarrollo Sostenible Surcolombiano</h4>
+      <p><b>Estudió:</b> Técnico en sistema</p>
+      <p><b>Estudia:</b> Análisis y Desarrollo de Software</p>
+      <p><b>ID Ficha:</b> 2692929</p>
+      <p><b>Municipio:</b> Pitalito - Huila</p>
+    </section>
+    <!-- Para los proyectos -->
+    <section id="proyectos">
+        <h2>Proyectos</h2>
+        <!-- Lista de proyectos con imágenes y descripciones -->
+        <h3 class="letras">Menu</h3>
+        <!-- Botones -->
+        <div class="botones">
+            <button id="trabajos">Trabajos</button>
+            <button id="practicas">Practicas</button>
+        </div>
+        <!-- Menú del boton de los trabajos -->
+        <div class="container-project" id="menuUno">
+          <div class="card-container">
+            <h2>Game of Thrones</h2>
+            <img src="img/Game-of-thrones.png" alt="" class="img-link">
+            <a href="fuentes-1.html" class="main-button">
+              <span>Entrar</span>
+            </a>
+          </div>
+          <div class="card-container">
+            <h2>Netflix</h2>
+            <img src="img/netfliz.png" alt="" class="img-link">
+            <a href="fuentes-2.html" class="main-button">
+              <span>Entrar</span>
+            </a>
+          </div>
+          <div class="card-container">
+            <h2>Fuentes Disney</h2>
+            <img src="img/disney.png" alt="" class="img-link">
+            <a href="fuente-disney.html" class="main-button">
+              <span>Entrar</span>
+            </a>
+          </div>
+          <div class="card-container">
+            <h2>Colores</h2>
+            <img src="img/colores.png" alt="" class="img-link">
+            <a href="colores.html" class="main-button">
+              <span>Entrar</span>
+            </a>
+          </div>
+          <div class="card-container">
+            <h2>Mi sitio web</h2>
+            <img src="img/mi-sitio-web.png" alt="" class="img-link">
+            <a href="fuentes.html" class="main-button">
+              <span>Entrar</span>
+            </a>
+          </div>
+          <div class="card-container">
+            <h2>Fuentes descargadas para uso local</h2>
+            <img src="img/fuente-uso-local.png" alt="" class="img-link">
+            <a href="fuentes-local.html" class="main-button">
+              <span>Entrar</span>
+            </a>
+          </div>
+          <div class="card-container">
+            <h2>listas</h2>
+            <img src="img/lista.png" alt="" class="img-link">
+            <a href="listas.html" class="main-button">
+              <span>Entrar</span>
+            </a>
+          </div>
+          <div class="card-container">
+            <h2>Margen</h2>
+            <img src="img/margin.png" alt="" class="img-link">
+            <a href="margins.html" class="main-button">
+              <span>Entrar</span>
+            </a>
+          </div>
+          <div class="card-container">
+            <h2>Catalogo</h2>
+            <img src="img/catalogo.png" alt="" class="img-link">
+            <a href="catalogo.html" class="main-button">
+              <span>Entrar</span>
+            </a>
+          </div>
+          <div class="card-container">
+            <h2>Tablas</h2>
+            <img src="img/tabla.png" alt="" class="img-link">
+            <a href="tablas.html" class="main-button">
+              <span>Entrar</span>
+            </a>
+          </div>
+          <div class="card-container">
+            <h2>Formulario</h2>
+            <img src="img/formulario.png" alt="" class="img-link">
+            <a href="formularios.html" class="main-button">
+              <span>Entrar</span>
+            </a>
+          </div>
+          <div class="card-container">
+            <h2>Menu Iconos</h2>
+            <img src="img/menu-iconos.png" alt="" class="img-link">
+            <a href="menu-iconos.html" class="main-button">
+              <span>Entrar</span>
+            </a>
+          </div>
+          <div class="card-container">
+            <h2>Menu Sena</h2>
+            <img src="img/menu-sena.png" alt="" class="img-link">
+            <a href="menu-sena.html" class="main-button">
+              <span>Entrar</span>
+            </a>
+          </div>
+          <div class="card-container">
+            <h2>Media Query</h2>
+            <img src="img/media-query.png" alt="" class="img-link">
+            <a href="media-query.html" class="main-button">
+              <span>Entrar</span>
+            </a>
+          </div>
+          <div class="card-container">
+            <h2>Menu subitems</h2>
+            <img src="img/menu-subitems.png" alt="" class="img-link">
+            <a href="menu-subitems.html" class="main-button">
+              <span>Entrar</span>
+            </a>
+          </div>
+          <div class="card-container">
+            <h2>Toglee</h2>
+            <img src="img/toglee.png" alt="" class="img-link">
+            <a href="toglee.html" class="main-button">
+              <span>Entrar</span>
+            </a>
+          </div>
+          <div class="card-container">
+            <h2>Flexbox</h2>
+            <img src="img/flexbox.png" alt="" class="img-link">
+            <a href="flexbox.html" class="main-button">
+              <span>Entrar</span>
+            </a>
+          </div>
+          <div class="card-container">
+            <h2>Grid</h2>
+            <img src="img/calendario.png" alt="" class="img-link">
+            <a href="grid.html" class="main-button">
+              <span>Entrar</span>
+            </a>
+          </div>
+          <div class="card-container">
+            <h2>Maquetación</h2>
+            <img src="img/maquetacion.png" alt="" class="img-link">
+            <a href="maquetacion.html" class="main-button">
+              <span>Entrar</span>
+            </a>
+          </div>
+          <div class="card-container">
+            <h2>Maquetación 2</h2>
+            <img src="img/maquetacion-2.png" alt="" class="img-link">
+            <a href="maquetacion2.html" class="main-button">
+              <span>Entrar</span>
+            </a>
+          </div>
+          <div class="card-container">
+            <h2>Slider</h2>
+            <img src="img/img-slider.png" alt="" class="img-link">
+            <a href="slider.html" class="main-button">
+              <span>Entrar</span>
+            </a>
+          </div>
+          <div class="card-container">
+            <h2>Carrito de ventas</h2>
+            <img src="img/carrito-venta.png" alt="" class="img-link">
+            <a href="carrito.html" class="main-button">
+              <span>Entrar</span>
+            </a>
+          </div>
+          <div class="card-container">
+            <h2>Amazon</h2>
+            <img src="img/img-amazon.png" alt="" class="img-link">
+            <a href="amazon.html" class="main-button">
+              <span>Entrar</span>
+            </a>
+          </div>
+        </div>
+        <!-- Menú del boton de practica -->
+        <div class="container-project menu-2" id="menuDos">
+            <div class="card-container">
+              <h2>Transición</h2>
+              <img src="img/transition.png" alt="" class="img-link">
+              <a href="transition.html" class="main-button">
+                <span>Entrar</span>
+              </a>
+            </div>
+            <div class="card-container">
+              <h2>Pocisionamiento</h2>
+              <img src="img/position.png" alt="" class="img-link">
+              <a href="pocisionamiento.html" class="main-button">
+                <span>Entrar</span>
+              </a>
+            </div>
+            <div class="card-container">
+              <h2>Header</h2>
+              <img src="img/header.png" alt="" class="img-link">
+              <a href="header.html" class="main-button">
+                <span>Entrar</span>
+              </a>
+            </div>
+            <div class="card-container">
+              <h2>Main IMG</h2>
+              <img src="img/main-img.png" alt="" class="img-link">
+              <a href="main-img.html" class="main-button">
+                <span>Entrar</span>
+              </a>
+            </div>
+            <div class="card-container">
+              <h2>IMGS</h2>
+              <img src="img/img-lupa.png" alt="" class="img-link">
+              <a href="imgs.html" class="main-button">
+                <span>Entrar</span>
+              </a>
+            </div>
+          </div>
+    </section>
+    <!-- para los contactos -->
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <!-- Formulario de contacto o información de contacto -->
+        <div class="faq-container first">
+          <div class="faq-collapsible">
+            <h3 class="name">Rosa Elena Muñoz</h3>
+            <div class="arrow-container">
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+          </div>
+          <div class="faq-answer">
+            <p><b>Telefono:</b> 3206674897</p>
+            <p><b>Correo:</b> rosaelenamunoz@gmail.com</p>
+            <p><b>Parentesco:</b> Mamá</p>
+          </div>
+        </div>
+        <!-- <div class="faq-container">
+          <div class="faq-collapsible">
+            <h3 class="name">¿Qué debo aprender y en qué orden?</h3>
+            <div class="arrow-container">
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+          </div>
+          <div class="faq-answer">
+            <p><b>Telefono:</b> </p>
+            <p><b>Correo:</b> </p>
+            <p><b>Parentesco:</b> </p>
+          </div>
+        </div> -->
+    </section>
     <div id="date" class="date"></div>
+
+    <footer>
+        <!-- Información de derechos de autor o cualquier otra cosa que desees agregar -->
+        <p>Jose Alejandro Velez Muñoz</p>
+        <p>jv1424937@gmail.com</p>
+        <p>3229499135 <button><a href="https://wa.me/3229499135" target="_blank"><i class="fa-solid fa-whatsapp"></i></a></button></p>
+      </footer>
     
     <script src="js/jquery-3.6.0.min.js"></script>
 </body>

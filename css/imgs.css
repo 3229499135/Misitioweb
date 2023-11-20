@@ -1,7 +1,7 @@
-/* .image-container {
+.image-container {
     position: relative;
     width: 500px; /* Ajusta el ancho según tu imagen */
-    /*overflow: hidden;
+    overflow: hidden;
 }
 
 #original-image {
@@ -11,16 +11,16 @@
 
 .magnifier {
     width: 250px; /* Ancho de la lupa */
-    /*height: 250px; /* Altura de la lupa */
-    /*border: 2px solid #333;
+    height: 250px; /* Altura de la lupa */
+    border: 2px solid #333;
     position: absolute;
     cursor: crosshair;
     display: none;
     background-image: url('../img/auriculares1.jpg'); /* URL de tu imagen */
-    /*background-size: 500px; /* Ancho del contenedor de la imagen */
-/*} */
+    background-size: 500px; /* Ancho del contenedor de la imagen */
+}
 
-body {
+/* body {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -46,5 +46,5 @@ body {
     background: url('../img/auriculares1.jpg') no-repeat;
     background-size: 300% 300%;
     cursor: zoom-in;
-  }
+  } */
   

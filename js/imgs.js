@@ -1,4 +1,4 @@
-/* const imageContainer = document.querySelector('.image-container');
+const imageContainer = document.querySelector('.image-container');
 const magnifier = document.querySelector('.magnifier');
 const originalImage = document.getElementById('original-image');
 
@@ -18,9 +18,9 @@ imageContainer.addEventListener('mousemove', (e) => {
 
 imageContainer.addEventListener('mouseleave', () => {
     magnifier.style.display = 'none';
-}); */
+});
 
-
+/* 
 const contenedor = document.querySelector('.imagen-contenedor');
 const lupa = document.getElementById('lupa');
 const imagenPrincipal = document.getElementById('imagenPrincipal');
@@ -48,3 +48,4 @@ contenedor.addEventListener('mouseleave', () => {
 contenedor.addEventListener('click', () => {
   lupa.style.display = (lupa.style.display === 'none') ? 'block' : 'none';
 });
+ */

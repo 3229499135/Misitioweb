@@ -17,10 +17,10 @@ let btnX = document.getElementById("btnX");
 let despregable = document.getElementById('despregable');
 
 producto.addEventListener('click', function() {
-    despregable.style.visibility = 'visible';
+    despregable.style.display = 'flex';
 });
 btnX.addEventListener('click', function() {
-    despregable.style.visibility = 'hidden';
+    despregable.style.display = 'none';
 });
 
 // Para seleccionar la imagen
@@ -123,10 +123,44 @@ productoImgOcho.addEventListener('click', function() {
     productoImgOcho.style.borderColor = '#FF8F00';
 });
 
+// Función para manejar eventos de mousemove
+/* function cambiarImagenPrincipal(src) {
+    originalImage.setAttribute("src", src);
+} */
+
+const imgPrincipalUno = document.getElementById('productoImgMainUno');
+const imgPrincipalDos = document.getElementById('productoImgMainDos');
+const imgPrincipalTres = document.getElementById('productoImgMainTres');
+const imgPrincipalCuatro = document.getElementById('productoImgMainCuatro');
+const imgPrincipalCinco = document.getElementById('productoImgMainCinco');
+const imgPrincipalSeis = document.getElementById('productoImgMainSeis');
+const originalImage = document.getElementById('original-image');
+
+imgPrincipalUno.addEventListener("mousemove", function() {
+    originalImage.setAttribute("src","img/auriculares1.jpg");
+    originalImage.style.backgroundImage.setAttribute('url','img/auriculares1.jpg');
+});
+imgPrincipalDos.addEventListener("mousemove", function() {
+    originalImage.setAttribute("src","img/auriculares1-2.jpg");
+    originalImage.style.backgroundImage.setAttribute('url','img/auriculares1-2.jpg');
+});
+imgPrincipalTres.addEventListener("mousemove", function() {
+    originalImage.setAttribute("src","img/auriculares1-3.jpg");
+});
+imgPrincipalCuatro.addEventListener("mousemove", function() {
+    originalImage.setAttribute("src","img/auriculares1-4.jpg");
+});
+imgPrincipalCinco.addEventListener("mousemove", function() {
+    originalImage.setAttribute("src","img/auriculares1-5.jpg");
+});
+imgPrincipalSeis.addEventListener("mousemove", function() {
+    originalImage.setAttribute("src","img/auriculares1-6.jpg");
+});
+
+
 // Para la lupa
 const imageContainer = document.querySelector('#producto');
 const magnifier = document.querySelector('.magnifier');
-const originalImage = document.getElementById('original-image');
 
 imageContainer.addEventListener('mousemove', (e) => {
     const containerRect = imageContainer.getBoundingClientRect();
@@ -137,17 +171,28 @@ imageContainer.addEventListener('mousemove', (e) => {
     const backgroundY = (offsetY / imageContainer.offsetHeight) * 100;
 
     magnifier.style.backgroundPosition = `${backgroundX}% ${backgroundY}%`;
-    /* magnifier.style.left = e.clientX - magnifier.offsetWidth / 2 + 'px';
-    magnifier.style.top = e.clientY - magnifier.offsetHeight / 2 + 'px'; */
     magnifier.style.display = 'block';
 });
-imageContainer.addEventListener('mousemove', (e) => {
-    cordenadas.style.left = e.clientX - cordenadas.offsetWidth / 0.78 + 'px';
-    cordenadas.style.top = e.clientY - cordenadas.offsetHeight / 0.78 + 'px';
+/* imageContainer.addEventListener('mousemove', (e) => {
+    cordenadas.style.left = e.clientX - cordenadas.offsetWidth / 0.84 + 'px';
+    cordenadas.style.top = e.clientY - cordenadas.offsetHeight / 0.74 + 'px';
     cordenadas.style.display = 'block';
-});
+}); */
 
 imageContainer.addEventListener('mouseleave', () => {
     magnifier.style.display = 'none';
-    cordenadas.style.display = 'none';
+    /* cordenadas.style.display = 'none'; */
 });
+
+
+
+/* let auriculares2 = document.getElementById('auriculares2');
+
+auriculares2.addEventListener('click', function(){
+    let color1 = 'Blanco';
+    let text = document.getElementById('text1');
+    let text2 = document.getElementById('text2');
+
+    
+    text2.innerText = texto.color1;
+}) */
