@@ -335,8 +335,15 @@ a {
 }
 .container-produc {
     grid-area: container-produc;
+    display: block;
 }
-.productoMain1, .productoMain2, .productoMain3, .productoMain4, .productoMain5, .productoMain6 {
+#containerProducDos {
+    display: none;
+}
+#containerProducTres {
+    display: none;
+}
+.productoMain {
     height: 45px;
     border: 1px solid var(--azul);
     display: flex;
@@ -362,6 +369,12 @@ a {
     overflow: hidden;
     font-size: 12px;
     font-weight: 500;
+}
+#containerProductoMainDos {
+    display: none;
+}
+#containerProductoMainTres {
+    display: none;
 }
 .content-img {
     height: 92%;
@@ -397,10 +410,19 @@ a {
     position: absolute;
     cursor: crosshair;
     display: none;
-    background-image: url('../img/auriculares1.jpg'); /* URL de tu imagen */
+    /* background-image: url('../img/auriculares1.jpg'); */ /* URL de tu imagen */
     background-size: 1500px; /* Ancho del contenedor de la imagen */
     top: 96px;
     left: 31.9%;
+}
+.magnifier-1 {
+    background-image: url('../img/auriculares1.jpg');
+}
+.magnifier-2 {
+    background-image: url('../img/auriculares2.jpg');
+}
+.magnifier-3 {
+    background-image: url('../img/auriculares3.jpg');
 }
 .text {
     grid-area: texto;
@@ -522,14 +544,6 @@ a {
     border-radius: 8px;
     padding: 8px;
 }
-.precio {
-    margin: 0;
-    font-size: 13px;
-    font-weight: 400;
-}
-.signo-precio-producto, .precio-producto {
-    font-size: 28px;
-}
 .devolu {
     font-size: 14px;
     color: var(--verde2);
@@ -630,7 +644,7 @@ a {
 .agregar-accesorios {
     border: 1px solid var(--gris2);
     border-radius: 8px;
-    margin: 18px 0;
+    margin: 14px 0;
     font-size: 14.2px;
 }
 .agregar-accesorio {
@@ -662,13 +676,15 @@ a {
     font-size: 14px;
     border: 1px solid var(--gris2);
     border-radius: 8px;
-    margin: 18px 0;
-    padding: 10px;
+    margin: 14px 0;
+    padding: 15px;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
-hr {
-    color: var(--gris2);
+.nuevo-text {
+    display: flex;
+    flex-direction: row;
 }
 .order-inicio {
     display: flex;
@@ -677,6 +693,40 @@ hr {
 }
 .tamano {
     font-size: 10px;
+}
+.icon-angle-right {
+    margin: 0;
+    text-align: left;
+}
+.otro-vendedor {
+    font-size: 14px;
+    border: 1px solid var(--negro);
+    border-radius: 8px;
+}
+.otros-vendedores-amazon, .vendedor {
+    padding: 6px;
+}
+.otros-vendedores-amazon {
+    text-align: center;
+    font-weight: 600;
+    font-size: 14px;
+}
+.precio-and-carrito {
+    color: var(--rojo);
+    display: flex;
+    justify-content: space-between;
+}
+.btn-agregar-carrito {
+    background-color: var(--amarillo);
+    border: none;
+    border-radius: 10px;
+    padding: 4px 2px;
+}
+.text-vendedor {
+    font-size: 12px;
+}
+.vendedor-negrilla {
+    font-weight: 500;
 }
 
 /* Para el modal */
