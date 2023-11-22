@@ -410,8 +410,17 @@ footer {
   font-size: 18px;
   margin: 0 12px;
 }
+.facebook-icon {
+  color: #1877f2;
+}
 .instagram-icon {
-  color: linear-gradient(#8a3ab9, #fd7e14);
+  background-image: linear-gradient(45deg, #833ab4, #fd267d);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 /* Para tablet */
 @media screen and (max-width: 1240px) {
@@ -436,6 +445,10 @@ footer {
   }
   .icon-container{
     height: 56px;
+  }
+  .icon{
+    height: 40%;
+    font-size: 26px;
   }
   /* Estilo del primer section(sobre mi) */
   #sobre-mi {
@@ -462,6 +475,9 @@ footer {
   /* Estilo del tercer section(contactos) */
   .faq-container{
     width: 100%;
+  }
+  .redes-sociales {
+    flex-direction: column;
   }
 }
 

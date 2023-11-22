@@ -21,6 +21,7 @@
     --verde: #2a9c2a;
     --verde2: #007185;
     --anaranjado: #FF8F00;
+    --cafe: #c45500;
 }
 
 /* Estilo de la página. */
@@ -352,6 +353,10 @@ a {
     border-radius: 10px;
     cursor: pointer;
     margin: 10px 7px;
+    box-sizing: border-box;
+}
+.productoMain1 {
+    box-shadow: 0 0 25px #0000ff99;
 }
 .img-main-producto {
     width: 100%;
@@ -410,19 +415,10 @@ a {
     position: absolute;
     cursor: crosshair;
     display: none;
-    /* background-image: url('../img/auriculares1.jpg'); */ /* URL de tu imagen */
+    background-image: url('../img/auriculares1.jpg'); /* URL de tu imagen */
     background-size: 1500px; /* Ancho del contenedor de la imagen */
     top: 96px;
     left: 31.9%;
-}
-.magnifier-1 {
-    background-image: url('../img/auriculares1.jpg');
-}
-.magnifier-2 {
-    background-image: url('../img/auriculares2.jpg');
-}
-.magnifier-3 {
-    background-image: url('../img/auriculares3.jpg');
 }
 .text {
     grid-area: texto;
@@ -439,6 +435,42 @@ a {
 .visita-tienda-BENGOO {
     font-size: 14px;
     color: var(--azul2);
+}
+.estrellas-calificacion {
+    display: flex;
+    flex-direction: row;
+}
+.estrellas {
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.start {
+    margin: 0 3px;
+    color: #ffa41c;
+}
+.calificacion, .pregunta {
+    margin: 0 14px;
+}
+.div-calificacion {
+    border-right: 1px solid var(--gris3);
+}
+.mas-vendido {
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: var(--azul2);
+}
+.div-number-vendido {
+    background-color: var(--cafe);
+    padding: 4px;
+    color: var(--blanco);
+    margin: 0 6px 0 0;
+}
+.cant-vendidos {
+    font-size: 14px;
 }
 .content-text-thow {
     margin: 10px;
@@ -700,7 +732,7 @@ a {
 }
 .otro-vendedor {
     font-size: 14px;
-    border: 1px solid var(--negro);
+    border: 1px solid var(--gris2);
     border-radius: 8px;
 }
 .otros-vendedores-amazon, .vendedor {
@@ -743,12 +775,19 @@ a {
 }
 .content-dos {
     width: 88%;
+    display: block;
     background-color: var(--blanco);
     border-radius: 12px;
     margin-top: 6px;
     padding: 10px;
     justify-content: center;
     align-items: center;
+}
+#contentDos2 {
+    display: none;
+}
+#contentDos3 {
+    display: none;
 }
 .header-modal {
     width: 100%;

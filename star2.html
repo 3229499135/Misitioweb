@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .rating {
+      unicode-bidi: bidi-override;
+      direction: rtl;
+      font-size: 25px;
+      cursor: pointer;
+    }
+
+    .rating > span {
+      display: inline-block;
+      position: relative;
+      width: 1.1em;
+    }
+
+    .rating > span:hover:before,
+    .rating > span:hover ~ span:before,
+    .rating > span.selected:before,
+    .rating > span.selected ~ span:before {
+      content: "\2605";
+      position: absolute;
+      color: gold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="rating" id="rating" onclick="rate(event)">
+    <span id="star1">&#9733;</span>
+    <span id="star2">&#9733;</span>
+    <span id="star3">&#9733;</span>
+    <span id="star4">&#9733;</span>
+    <span id="star5">&#9733;</span>
+  </div>
+
+  <script>
+    function rate(event) {
+      if (event.target.tagName === 'SPAN') {
+        const clickedStar = event.target;
+        const rating = clickedStar.id.replace('star', '');
+
+        // Reset all stars
+        for (let i = 1; i <= 5; i++) {
+          const star = document.getElementById(`star${i}`);
+          star.classList.remove('selected');
+        }
+
+        // Highlight selected stars
+        for (let i = 1; i <= rating; i++) {
+          const star = document.getElementById(`star${i}`);
+          star.classList.add('selected');
+        }
+
+        // Aquí puedes enviar el valor de la calificación al servidor o hacer lo que desees con él.
+        console.log('Calificación seleccionada:', rating);
+      }
+    }
+
+    // Función para establecer automáticamente el número de estrellas
+    function setRating(value) {
+      const ratingContainer = document.getElementById('rating');
+      const stars = ratingContainer.children;
+
+      // Validar que el valor esté en el rango de 1 a 5
+      const clampedValue = Math.max(1, Math.min(value, 5));
+
+      // Establecer automáticamente el número de estrellas
+      rate({ target: stars[5 - clampedValue] });
+    }
+
+    // Ejemplo: Establecer automáticamente el número de estrellas según el valor proporcionado (por ejemplo, 3)
+    document.addEventListener('DOMContentLoaded', function() {
+      const numeroDeEstrellas = 1; // Puedes cambiar este valor según tus necesidades
+      setRating(numeroDeEstrellas);
+    });
+  </script>
+
+</body>
+</html>

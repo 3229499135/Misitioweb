@@ -110,10 +110,10 @@ productoImgOcho.addEventListener('click', function() {
     productoImgOcho.style.borderColor = '#FF8F00';
 });
 
-// Función para manejar eventos de mousemove
-/* function cambiarImagenPrincipal(src) {
+// Función para manejar eventos de mousemove para los imagenes pequeña pase a la imagen principal con solo pasar el cursor
+function cambiarImagenPrincipal(src) {
     originalImage.setAttribute("src", src);
-} */
+}
 
 const imgPrincipalUno = document.getElementById('productoImgMainUno');
 const imgPrincipalDos = document.getElementById('productoImgMainDos');
@@ -121,33 +121,67 @@ const imgPrincipalTres = document.getElementById('productoImgMainTres');
 const imgPrincipalCuatro = document.getElementById('productoImgMainCuatro');
 const imgPrincipalCinco = document.getElementById('productoImgMainCinco');
 const imgPrincipalSeis = document.getElementById('productoImgMainSeis');
-const originalImage = document.getElementById('original-image');
 
 imgPrincipalUno.addEventListener("mousemove", function() {
-    originalImage.setAttribute("src","img/auriculares1.jpg");
+    cambiarImagenPrincipal("img/auriculares1.jpg");
     magnifier.style.backgroundImage = "url('img/auriculares1.jpg')";
 });
 imgPrincipalDos.addEventListener("mousemove", function() {
-    originalImage.setAttribute("src","img/auriculares1-2.jpg");
+    cambiarImagenPrincipal("img/auriculares1-2.jpg");
     magnifier.style.backgroundImage = "url('img/auriculares1-2.jpg')";
 });
 imgPrincipalTres.addEventListener("mousemove", function() {
-    originalImage.setAttribute("src","img/auriculares1-3.jpg");
+    cambiarImagenPrincipal("img/auriculares1-3.jpg");
+    magnifier.style.backgroundImage = "url('img/auriculares1-3.jpg')";
 });
 imgPrincipalCuatro.addEventListener("mousemove", function() {
-    originalImage.setAttribute("src","img/auriculares1-4.jpg");
+    cambiarImagenPrincipal("img/auriculares1-4.jpg");
+    magnifier.style.backgroundImage = "url('img/auriculares1-4.jpg')";
 });
 imgPrincipalCinco.addEventListener("mousemove", function() {
-    originalImage.setAttribute("src","img/auriculares1-5.jpg");
+    cambiarImagenPrincipal("img/auriculares1-5.jpg");
+    magnifier.style.backgroundImage = "url('img/auriculares1-5.jpg')";
 });
 imgPrincipalSeis.addEventListener("mousemove", function() {
-    originalImage.setAttribute("src","img/auriculares1-6.jpg");
+    cambiarImagenPrincipal("img/auriculares1-6.jpg");
+    magnifier.style.backgroundImage = "url('img/auriculares1-6.jpg')";
 });
+
+// Esto es para las estrellas
+var numeroDeEstrellas = 4.3;
+let numberEstrella = document.getElementById("numberEstrella");
+let estrellas = [
+    document.getElementById("etrellaUno"),
+    document.getElementById("etrellaDos"),
+    document.getElementById("etrellaTres"),
+    document.getElementById("etrellaCuatro"),
+    document.getElementById("etrellaCinco")
+];
+
+// Asegurar que la calificación esté en el rango de 0 a 5
+numeroDeEstrellas = Math.min(Math.max(numeroDeEstrellas, 0), 5);
+
+numberEstrella.innerText = numeroDeEstrellas;
+
+for (let i = 0; i < estrellas.length; i++) {
+    estrellas[i].classList.remove("fa-regular", "fa-solid", "fa-star", "fa-star-half-stroke");
+
+    if (i < Math.floor(numeroDeEstrellas)) {
+        estrellas[i].classList.add("fa-solid", "fa-star");
+    } else if (i === Math.floor(numeroDeEstrellas) && numeroDeEstrellas % 1 !== 0) {
+        estrellas[i].classList.add("fa-regular", "fa-star-half-stroke");
+    } else {
+        estrellas[i].classList.add("fa-regular", "fa-star");
+    }
+}
+// Finalizamos con lo de las estrellas
+
 
 
 // Para la lupa
 const imageContainer = document.querySelector('#producto');
 const magnifier = document.querySelector('.magnifier');
+const originalImage = document.getElementById('original-image');
 
 imageContainer.addEventListener('mousemove', (e) => {
     const containerRect = imageContainer.getBoundingClientRect();
@@ -171,25 +205,60 @@ imageContainer.addEventListener('mouseleave', () => {
     /* cordenadas.style.display = 'none'; */
 });
 
+/* let textColor1 = document.getElementById("textColor1");
 
+function contentImgUno() {
+    var color =  "Azul";
+    originalImage.setAttribute("src","img/auriculares1.jpg");
+    textColor1.innerText = color;
+}
+function contentImgDos() {
+    var color =  "Purpura";
+    originalImage.setAttribute("src","img/auriculares2.jpg");
+    textColor1.innerText = color;
+}
+function contentImgTres() {
+    var color =  "Anaranjado";
+    originalImage.setAttribute("src","img/auriculares3.jpg");
+    textColor1.innerText = color;
+} */
 
-let auriculares1 = document.getElementById('auriculares1');
-let auriculares2 = document.getElementById('auriculares2');
-let auriculares3 = document.getElementById('auriculares3');
+let auriculares1 = document.getElementById('auricular1');
+let auriculares2 = document.getElementById('auricular2');
+let auriculares3 = document.getElementById('auricular3');
 
 auriculares1.addEventListener('mousemove', function(){
+    contentImgUno();
+    auriculares1.style.borderColor = "#0000FF";
+    auriculares2.style.borderColor = "#D5D9D9";
+    auriculares3.style.borderColor = "#D5D9D9";
+});
+auriculares2.addEventListener('mousemove', function(){
+    contentImgDos();
+    auriculares1.style.borderColor = "#D5D9D9";
+    auriculares2.style.borderColor = "#0000FF";
+    auriculares3.style.borderColor = "#D5D9D9";
+});
+auriculares3.addEventListener('mousemove', function(){
+    contentImgTres();
+    auriculares1.style.borderColor = "#D5D9D9";
+    auriculares2.style.borderColor = "#D5D9D9";
+    auriculares3.style.borderColor = "#0000FF";
+});
+
+auriculares1.addEventListener('click', function(){
     contentArticleUno();
     auriculares1.style.borderColor = "#FF8F00";
     auriculares2.style.borderColor = "#D5D9D9";
     auriculares3.style.borderColor = "#D5D9D9";
 });
-auriculares2.addEventListener('mousemove', function(){
+auriculares2.addEventListener('click', function(){
     contentArticleDos();
     auriculares1.style.borderColor = "#D5D9D9";
     auriculares2.style.borderColor = "#FF8F00";
     auriculares3.style.borderColor = "#D5D9D9";
 });
-auriculares3.addEventListener('mousemove', function(){
+auriculares3.addEventListener('click', function(){
     contentArticleTres();
     auriculares1.style.borderColor = "#D5D9D9";
     auriculares2.style.borderColor = "#D5D9D9";

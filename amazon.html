@@ -9,7 +9,7 @@
   <link rel="shortcut icon" href="img/favicon-amazon.png" type="image/png">
   <script defer src="js/amazon.js"></script>
   <script defer src="js/amazon2.js"></script>
-  <title>Amazon</title>
+  <title>Amazon</title 
 </head>
 <body>
   <!-- Header -->
@@ -19,7 +19,7 @@
         <img src="img/amazon.png" class="logo" alt="Logo">
       </div>
       <div class="ubicacion">
-        <i class="fa-solid fa-location-dot fa-beat-fade"></i>
+        <i class="fa-sharp fa-regular fa-location-dot fa-beat-fade"></i>
         <div class="infor">
           <div class="enviar">Enviar a</div>
           <div class="colombia">
@@ -101,7 +101,7 @@
   <div class="content">
     <!-- Producto Uno -->
     <div class="container-produc" id="containerProducUno">
-      <div class="productoMain" id="productoImgMainUno">
+      <div class="productoMain productoMain1" id="productoImgMainUno">
         <img class="img-producto" src="img/auriculares1.jpg" alt="producto">
       </div>
       <div class="productoMain" id="productoImgMainDos">
@@ -127,7 +127,7 @@
       </div>
       <p>Pasa el mause encima de la imagen para aplicar zoom</p>
     </div>
-    <div id="magnifierUno" class="magnifier magnifier-1"></div>
+    <div id="magnifierUno" class="magnifier"></div>
     <!-- Producto Dos -->
     <div class="container-produc" id="containerProducDos">
       <div class="productoMain" id="productoImgMainUno">
@@ -156,7 +156,7 @@
       </div>
       <p>Pasa el mause encima de la imagen para aplicar zoom</p>
     </div>
-    <div id="magnifierDos" class="magnifier magnifier-2"></div>
+    <div id="magnifierDos" class="magnifier"></div>
     <!-- Producte Tres -->
     <div class="container-produc" id="containerProducTres">
       <div class="productoMain" id="productoImgMainUno">
@@ -185,7 +185,7 @@
       </div>
       <p>Pasa el mause encima de la imagen para aplicar zoom</p>
     </div>
-    <div id="magnifierTres" class="magnifier magnifier-3"></div>
+    <div id="magnifierTres" class="magnifier"></div>
     <!-- Resto de Contenido -->
     <div class="text">
       <div class="content-text-one">
@@ -195,6 +195,28 @@
         <div>
           <a href="#" class="visita-tienda-BENGOO">Visita la tienda de BENGOO</a>
         </div>
+        <div class="estrellas-calificacion">
+          <div class="estrellas">
+            <P id="numberEstrella">0</P>
+            <i class="start fa-star" id="etrellaUno"></i>
+            <i class="start fa-star" id="etrellaDos"></i>
+            <i class="start fa-star" id="etrellaTres"></i>
+            <i class="start fa-star" id="etrellaCuatro"></i>
+            <i class="start fa-star" id="etrellaCinco"></i>
+            <i class="icono2 fa-solid fa-angle-down"></i>
+          </div>
+          <div class="div-calificacion">
+            <a href="#" class="calificacion visita-tienda-BENGOO">103.251 calificaciones</a>
+          </div>
+          <div>
+            <a href="#" class="pregunta visita-tienda-BENGOO">1000+ preguntas respondidas</a>
+          </div>
+        </div>
+        <div class="mas-vendido">
+          <div class="div-number-vendido">#1 más vendido</div>
+          en Diademas y Audífinos de Xbox One
+        </div>
+        <div class="cant-vendidos">10 K+ comprados el mes pasado</div>
       </div>
       <hr>
       <div class="content-text-thow">
@@ -210,15 +232,15 @@
           <p class="text-prima">Color: <j class="color" id="textColor1">Azul</j></p>
         </div>
         <div class="divs-images">
-          <div class="div-image divs-images-1" id="auriculares1">
+          <div class="div-image divs-images-1" id="auricular1">
             <img src="img/auriculares1.jpg" alt="" class="image">
             <div class="precio">US$22.85</div>
           </div>
-          <div class="div-image divs-images-2" id="auriculares2">
+          <div class="div-image divs-images-2" id="auricular2">
             <img src="img/auriculares2.jpg" alt="" class="image">
             <div class="precio">Cop <span class="signo-precio-producto-divs">$</span><span class="precio-producto-divs" id="precioProductoDivsDos">0</span></div>
           </div>
-          <div class="div-image divs-images-3" id="auriculares3">
+          <div class="div-image divs-images-3" id="auricular3">
             <img src="img/auriculares3.jpg" alt="" class="image">
             <div class="precio">US$20.88</div>
           </div>
@@ -243,7 +265,7 @@
             </tr>
             <tr>
               <th class="th-left-of-content-center">Tecnología de conectividad</th>
-              <td class="td-table-content">Alámbrico</td>
+              <td class="td-table-content" id="tecnologiaConectividad">Alámbrico</td>
             </tr>
           </table>
         </div>
@@ -252,7 +274,14 @@
       <div class="info-sobre-producto">
         <div class="sobre-el-articulo">Sobre este articulo</div>
         <div class="text-info-articulo" id="textInfoArticulo">
-          
+          <ul class='info-text-info-articulo'>
+            <li>Compatible con múltiples plataformas: compatible con PlayStation 4, nueva Xbox One, PC, Nintendo 3DS, laptop, PSP, tableta, iPad, computadora, teléfono móvil. Tenga en cuenta que necesita un adaptador Microsoft adicional (no incluido) cuando se conecta con un controlador Xbox One versión antigua.</li>
+            <li>Subwoofer estéreo envolvente: sonido claro que funciona con latón fuerte, espléndido aislamiento de ruido ambiental y controlador de neodimio magnético de alta precisión de 1.575 pulgadas, precisión de posicionamiento acústico mejora la sensibilidad de la unidad de altavoz, lo que te ofrece un campo de sonido vívido, claridad de sonido, sonido de sensación de impacto. Perfecto para varios juegos como Halo 5 Guardians, Metal Gear Solid, Call of Duty, Star Wars Battlefront, Overwatch, World of Warcraft Legion, etc.</li>
+            <li>Micrófono de aislamiento de ruido: el micrófono onmi-direccional integrado con auriculares puede transmitir comunicación de alta calidad con su función de detección de ruido premium, puede captar sonidos con gran sensibilidad y eliminar el ruido, lo que te permite entregar o recibir mensajes claramente mientras estás en un juego. Diseño de micrófono flexible largo muy conveniente para ajustar el ángulo del micrófono.</li>
+            <li>Gran diseño humanizado: almohadillas de proteína de permeabilidad al aire superior, cómodas y de buena permeabilidad al aire, viga de cabeza de múltiples puntos, cuerda de cuerda con especificaciones de ingeniería del cuerpo humano que puede reducir la discapacidad auditiva y el sudor térmico. Material de cuero respetuoso con la piel para un período de uso más prolongado. Las luces LED deslumbrantes están diseñadas en los auriculares para resaltar la atmósfera del juego.</li>
+            <li>Control de volumen sin esfuerzo: cable USB trenzado de alta resistencia a la tracción, antienrollamiento con controlador de volumen giratorio y silencio de micrófono de tecla, evita eficazmente que el cable de 49 pulgadas de largo se enrosque y te permite controlar el volumen fácilmente y silenciar el micrófono como control de volumen sin esfuerzo con una tecla.</li>
+        </ul>
+        <p><j class="nota">Nota:</j> Los productos con enchufes eléctricos están diseñados para usarse en EE. UU. Las tomas de corriente y la tensión difieren a nivel internacional. Es posible que este producto requiera un adaptador o conversor para poder usarse en su destino. Comprueba la compatibilidad antes de comprar.</p>
         </div>
       </div>
     </div>
@@ -318,22 +347,6 @@
           </div>
         </div>
         <hr>
-        <div class="combo-teclado">
-          <p class="color-info">KOORUI Teclado mecánico ultracompacto con 60% de 61 teclas con cable retroiluminad...</p>
-          <div class="precio-plus-btn">
-            <p class="us-precio">US$29.99</p>
-            <button class="btn-agregar-carro">Agregar al carrito</button>
-          </div>
-        </div>
-        <hr>
-        <div class="combo-teclado">
-          <p class="color-info">KOORUI Teclados para juegos, 82 teclas, teclado mecánico de 26 teclas con retroiluminación...</p>
-          <div class="precio-plus-btn">
-            <p class="us-precio">US$47.98</p>
-            <button class="btn-agregar-carro">Agregar al carrito</button>
-          </div>
-        </div>
-        <hr>
         <div class="combo-teclado teclado-of-104-teclas">
           <p class="color-info">KOORUI Teclados para juegos, 104 teclas, teclado mecánico de tamaño completo con cable 26...</p>
           <div class="precio-plus-btn">
@@ -347,13 +360,18 @@
         <div class="otros-vendedores-amazon">Otros vendedores en Amazon</div>
         <hr>
         <div class="vendedor">
-          <div class="precio-and-carrito">US$22.99 <button class="btn-agregar-carrito">Agregar al carrito</button></div>
+          <div class="precio-and-carrito">US$23.99 <button class="btn-agregar-carrito">Agregar al carrito</button></div>
           <p class="text-vendedor">Vendedor: <j class="vendedor-negrilla">Bengoo Inc.</j></p>
         </div>
         <hr>
         <div class="vendedor">
           <div class="precio-and-carrito">US$22.99 <button class="btn-agregar-carrito">Agregar al carrito</button></div>
           <p class="text-vendedor">Vendedor: <j class="vendedor-negrilla">UNLUNK</j></p>
+        </div>
+        <hr>
+        <div class="vendedor">
+          <div class="precio-and-carrito">US$39.99 <button class="btn-agregar-carrito">Agregar al carrito</button></div>
+          <p class="text-vendedor">Vendedor: <j class="vendedor-negrilla">LMD Tech</j></p>
         </div>
       </div>
     </div>
@@ -407,6 +425,6 @@
         </div>
       </div>
     </div>
-  </div>  
+  </div>
 </body>
 </html>
