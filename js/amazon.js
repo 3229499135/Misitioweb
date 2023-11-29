@@ -2,15 +2,15 @@
 let producto = document.getElementById("producto");
 let btnX = document.getElementById("btnX");
 let despregable = document.getElementById('despregable');
-
 producto.addEventListener('click', function() {
     despregable.style.display = 'flex';
 });
 btnX.addEventListener('click', function() {
     despregable.style.display = 'none';
 });
+// Finalizamos lo de la visualizacion del modal
 
-// Para seleccionar la imagen
+// Para seleccionar la imagen del modal
 let productoImgUno = document.getElementById("productoImgUno");
 let productoImgDos = document.getElementById("productoImgDos");
 let productoImgTres = document.getElementById("productoImgTres");
@@ -109,8 +109,47 @@ productoImgOcho.addEventListener('click', function() {
     productoImgSiete.style.borderColor = '#D5D9D9';
     productoImgOcho.style.borderColor = '#FF8F00';
 });
+// End of selectión of the imeges of modal
 
-// Función para manejar eventos de mousemove para los imagenes pequeña pase a la imagen principal con solo pasar el cursor
+// Para el border inferior de los textos superiores del modal
+let textVideo = document.getElementById("textVideo");
+let textImage = document.getElementById("textImage");
+
+textImage.addEventListener("click", function() {
+    textImage.style.borderColor = "#FFA41C";
+    textVideo.style.borderColor = "transparent";
+});
+textVideo.addEventListener("click", function() {
+    textImage.style.borderColor = "transparent";
+    textVideo.style.borderColor = "#FFA41C";
+});
+// End of text superior of the modal
+
+// Para darle zoon a la imagen principal del modal
+document.addEventListener("DOMContentLoaded", function() {
+    let productoContentModal = document.getElementById("productoContentModal");
+    let imgProducto = document.getElementById("imgProducto");
+    
+    let isZoomed = false;
+
+    productoContentModal.addEventListener("click", function() {
+        if (isZoomed) {
+            imgProducto.style.width = "400px";
+            imgProducto.style.height = "auto"; // Set height to auto for maintaining aspect ratio
+            productoContentModal.style.cursor = "zoom-in";
+        } else {
+            imgProducto.style.width = "100%"; // Adjust the zoom level as needed
+            imgProducto.style.height = "auto"; // Set height to auto for maintaining aspect ratio
+            productoContentModal.style.cursor = "zoom-out";
+        }
+
+        isZoomed = !isZoomed;
+    });
+});
+// End of zoon of the image of modal
+
+// Función para manejar eventos de mousemove 
+// para que las imagenes pequeñas pase a la imagen principal con solo pasar el cursor
 function cambiarImagenPrincipal(src) {
     originalImage.setAttribute("src", src);
 }
@@ -125,31 +164,69 @@ const imgPrincipalSeis = document.getElementById('productoImgMainSeis');
 imgPrincipalUno.addEventListener("mousemove", function() {
     cambiarImagenPrincipal("img/auriculares1.jpg");
     magnifier.style.backgroundImage = "url('img/auriculares1.jpg')";
+    imgPrincipalUno.classList.add("borderProductoMain");
+    imgPrincipalDos.classList.remove("borderProductoMain");
+    imgPrincipalTres.classList.remove("borderProductoMain");
+    imgPrincipalCuatro.classList.remove("borderProductoMain");
+    imgPrincipalCinco.classList.remove("borderProductoMain");
+    imgPrincipalSeis.classList.remove("borderProductoMain");
 });
 imgPrincipalDos.addEventListener("mousemove", function() {
     cambiarImagenPrincipal("img/auriculares1-2.jpg");
     magnifier.style.backgroundImage = "url('img/auriculares1-2.jpg')";
+    imgPrincipalUno.classList.remove("borderProductoMain");
+    imgPrincipalDos.classList.add("borderProductoMain");
+    imgPrincipalTres.classList.remove("borderProductoMain");
+    imgPrincipalCuatro.classList.remove("borderProductoMain");
+    imgPrincipalCinco.classList.remove("borderProductoMain");
+    imgPrincipalSeis.classList.remove("borderProductoMain");
 });
 imgPrincipalTres.addEventListener("mousemove", function() {
     cambiarImagenPrincipal("img/auriculares1-3.jpg");
     magnifier.style.backgroundImage = "url('img/auriculares1-3.jpg')";
+    imgPrincipalUno.classList.remove("borderProductoMain");
+    imgPrincipalDos.classList.remove("borderProductoMain");
+    imgPrincipalTres.classList.add("borderProductoMain");
+    imgPrincipalCuatro.classList.remove("borderProductoMain");
+    imgPrincipalCinco.classList.remove("borderProductoMain");
+    imgPrincipalSeis.classList.remove("borderProductoMain");
 });
 imgPrincipalCuatro.addEventListener("mousemove", function() {
     cambiarImagenPrincipal("img/auriculares1-4.jpg");
     magnifier.style.backgroundImage = "url('img/auriculares1-4.jpg')";
+    imgPrincipalUno.classList.remove("borderProductoMain");
+    imgPrincipalDos.classList.remove("borderProductoMain");
+    imgPrincipalTres.classList.remove("borderProductoMain");
+    imgPrincipalCuatro.classList.add("borderProductoMain");
+    imgPrincipalCinco.classList.remove("borderProductoMain");
+    imgPrincipalSeis.classList.remove("borderProductoMain");
 });
 imgPrincipalCinco.addEventListener("mousemove", function() {
     cambiarImagenPrincipal("img/auriculares1-5.jpg");
     magnifier.style.backgroundImage = "url('img/auriculares1-5.jpg')";
+    imgPrincipalUno.classList.remove("borderProductoMain");
+    imgPrincipalDos.classList.remove("borderProductoMain");
+    imgPrincipalTres.classList.remove("borderProductoMain");
+    imgPrincipalCuatro.classList.remove("borderProductoMain");
+    imgPrincipalCinco.classList.add("borderProductoMain");
+    imgPrincipalSeis.classList.remove("borderProductoMain");
 });
 imgPrincipalSeis.addEventListener("mousemove", function() {
     cambiarImagenPrincipal("img/auriculares1-6.jpg");
     magnifier.style.backgroundImage = "url('img/auriculares1-6.jpg')";
+    imgPrincipalUno.classList.remove("borderProductoMain");
+    imgPrincipalDos.classList.remove("borderProductoMain");
+    imgPrincipalTres.classList.remove("borderProductoMain");
+    imgPrincipalCuatro.classList.remove("borderProductoMain");
+    imgPrincipalCinco.classList.remove("borderProductoMain");
+    imgPrincipalSeis.classList.add("borderProductoMain");
 });
+// End imege little
 
 // Esto es para las estrellas
 var numeroDeEstrellas = 4.3;
 let numberEstrella = document.getElementById("numberEstrella");
+let numberEstrellaDivs = document.getElementById("numberEstrellaDivs");
 let estrellas = [
     document.getElementById("etrellaUno"),
     document.getElementById("etrellaDos"),
@@ -157,56 +234,85 @@ let estrellas = [
     document.getElementById("etrellaCuatro"),
     document.getElementById("etrellaCinco")
 ];
-
+let estrellasDos = [
+    document.getElementById("etrellaUnoDivs"),
+    document.getElementById("etrellaDosDivs"),
+    document.getElementById("etrellaTresDivs"),
+    document.getElementById("etrellaCuatroDivs"),
+    document.getElementById("etrellaCincoDivs")
+]
 // Asegurar que la calificación esté en el rango de 0 a 5
 numeroDeEstrellas = Math.min(Math.max(numeroDeEstrellas, 0), 5);
-
 numberEstrella.innerText = numeroDeEstrellas;
+numberEstrellaDivs.innerText = numeroDeEstrellas;
 
 for (let i = 0; i < estrellas.length; i++) {
     estrellas[i].classList.remove("fa-regular", "fa-solid", "fa-star", "fa-star-half-stroke");
+    estrellasDos[i].classList.remove("fa-regular", "fa-solid", "fa-star", "fa-star-half-stroke");
 
     if (i < Math.floor(numeroDeEstrellas)) {
         estrellas[i].classList.add("fa-solid", "fa-star");
+        estrellasDos[i].classList.add("fa-solid", "fa-star");
     } else if (i === Math.floor(numeroDeEstrellas) && numeroDeEstrellas % 1 !== 0) {
         estrellas[i].classList.add("fa-regular", "fa-star-half-stroke");
+        estrellasDos[i].classList.add("fa-regular", "fa-star-half-stroke");
     } else {
         estrellas[i].classList.add("fa-regular", "fa-star");
+        estrellasDos[i].classList.add("fa-regular", "fa-star");
     }
 }
-// Finalizamos con lo de las estrellas
+// End of the star
 
+// Para visualizar el contenedor de la informacion de la calificación global
+let star = document.getElementById("star");
+let calificacionGlobal = document.getElementById("calificacionGlobal");
 
+star.addEventListener("mousemove", function() {
+    calificacionGlobal.style.display = "flex";
+});
+calificacionGlobal.addEventListener("mousemove", function() {
+    calificacionGlobal.style.display = "flex";
+});
+star.addEventListener("mouseleave", function () {
+    calificacionGlobal.style.display = "none";
+});
+calificacionGlobal.addEventListener("mouseleave", function () {
+    calificacionGlobal.style.display = "none";
+});
+// Fin para lo de la clificación global
 
-// Para la lupa
+// Para la lupa y Para el texto que aparece debajo del producto
 const imageContainer = document.querySelector('#producto');
 const magnifier = document.querySelector('.magnifier');
 const originalImage = document.getElementById('original-image');
+let textProducto = document.getElementById("textProducto");
 
 imageContainer.addEventListener('mousemove', (e) => {
     const containerRect = imageContainer.getBoundingClientRect();
     const offsetX = e.clientX - containerRect.left;
     const offsetY = e.clientY - containerRect.top;
-
     const backgroundX = (offsetX / imageContainer.offsetWidth) * 100;
     const backgroundY = (offsetY / imageContainer.offsetHeight) * 100;
 
     magnifier.style.backgroundPosition = `${backgroundX}% ${backgroundY}%`;
     magnifier.style.display = 'block';
-});
-/* imageContainer.addEventListener('mousemove', (e) => {
-    cordenadas.style.left = e.clientX - cordenadas.offsetWidth / 0.84 + 'px';
-    cordenadas.style.top = e.clientY - cordenadas.offsetHeight / 0.74 + 'px';
-    cordenadas.style.display = 'block';
-}); */
 
+    textProducto.innerText = "Haz click para ampliar el contenedor madal";
+});
+imageContainer.addEventListener('mousemove', (e) => {
+    cordenadas.style.left = e.clientX - cordenadas.offsetWidth / 0.86 + 'px';
+    cordenadas.style.top = e.clientY - cordenadas.offsetHeight / 0.47 + 'px';
+    cordenadas.style.display = 'block';
+});
 imageContainer.addEventListener('mouseleave', () => {
     magnifier.style.display = 'none';
-    /* cordenadas.style.display = 'none'; */
+    cordenadas.style.display = 'none';
+    textProducto.innerText = "Pasa el mause encima de la imagen para aplicar zoom";
 });
+// End of the lupa, y para lo del texto que aparece debajo del texto
 
-/* let textColor1 = document.getElementById("textColor1");
-
+// Para que funcione los divs de las imagenes con precios como un hover
+let textColor1 = document.getElementById("textColor1");
 function contentImgUno() {
     var color =  "Azul";
     originalImage.setAttribute("src","img/auriculares1.jpg");
@@ -218,15 +324,19 @@ function contentImgDos() {
     textColor1.innerText = color;
 }
 function contentImgTres() {
-    var color =  "Anaranjado";
+    var color =  "Naranja";
     originalImage.setAttribute("src","img/auriculares3.jpg");
     textColor1.innerText = color;
-} */
+}
+function contentImg() {
+    var color =  "Azul";
+    originalImage.setAttribute("src","img/auriculares1.jpg");
+    textColor1.innerText = color;
+}
 
 let auriculares1 = document.getElementById('auricular1');
 let auriculares2 = document.getElementById('auricular2');
 let auriculares3 = document.getElementById('auricular3');
-
 auriculares1.addEventListener('mousemove', function(){
     contentImgUno();
     auriculares1.style.borderColor = "#0000FF";
@@ -246,21 +356,109 @@ auriculares3.addEventListener('mousemove', function(){
     auriculares3.style.borderColor = "#0000FF";
 });
 
-auriculares1.addEventListener('click', function(){
-    contentArticleUno();
+auriculares1.addEventListener('mouseleave', function(){
+    contentImg();
     auriculares1.style.borderColor = "#FF8F00";
     auriculares2.style.borderColor = "#D5D9D9";
     auriculares3.style.borderColor = "#D5D9D9";
 });
-auriculares2.addEventListener('click', function(){
-    contentArticleDos();
+auriculares2.addEventListener('mouseleave', function(){
+    contentImg();
+    auriculares1.style.borderColor = "#FF8F00";
+    auriculares2.style.borderColor = "#D5D9D9";
+    auriculares3.style.borderColor = "#D5D9D9";
+});
+auriculares3.addEventListener('mouseleave', function(){
+    contentImg();
+    auriculares1.style.borderColor = "#FF8F00";
+    auriculares2.style.borderColor = "#D5D9D9";
+    auriculares3.style.borderColor = "#D5D9D9";
+});
+// End of divs of the imeges with the price how hover
+
+// Para que funcione los divs de las imagenes con precios al darle click
+let textColor2 = document.getElementById("textColor2");
+let containerProducUno = document.getElementById("containerProducUno");
+let containerProducDos = document.getElementById("containerProducDos");
+let containerProducTres = document.getElementById("containerProducTres");
+let containerProductoMainUno = document.getElementById("containerProductoMainUno");
+let containerProductoMainDos = document.getElementById("containerProductoMainDos");
+let containerProductoMainTres = document.getElementById("containerProductoMainTres");
+let porcentajeDescuento = document.getElementById("porcentajeDescuento");
+let precioUno = document.getElementById("precioUno");
+let precioDos = document.getElementById("precioDos");
+
+function contentArticleUno() {
+    var color = "Azul";
+    var porcentaje = "-35 %";
+    var precio = 'US$<j class="number-valor">25</j>99';
+
+    containerProducUno.style.display = "block";
+    containerProducDos.style.display = "none";
+    containerProducTres.style.display = "none";
+    containerProductoMainUno.style.display = "flex";
+    containerProductoMainDos.style.display = "none";
+    containerProductoMainTres.style.display = "none";
+
+    textColor1.innerText = color;
+    textColor2.innerText = color;
+    porcentajeDescuento.innerText = porcentaje;
+    precioUno.innerHTML = precio;
+    precioDos.innerHTML = precio;
+    auriculares1.style.borderColor = "#FF8F00";
+    auriculares2.style.borderColor = "#D5D9D9";
+    auriculares3.style.borderColor = "#D5D9D9";
+}
+function contentArticleDos() {
+    var color = "Purpura";
+    var porcentaje = "-10 %";
+    var precio = 'US$<j class="number-valor">35</j>99';
+
+    containerProducUno.style.display = "none";
+    containerProducDos.style.display = "block";
+    containerProducTres.style.display = "none";
+    containerProductoMainUno.style.display = "none";
+    containerProductoMainDos.style.display = "flex";
+    containerProductoMainTres.style.display = "none";
+
+    textColor1.innerText = color;
+    textColor2.innerText = color;
+    porcentajeDescuento.innerText = porcentaje;
+    precioUno.innerHTML = precio;
+    precioDos.innerHTML = precio;
     auriculares1.style.borderColor = "#D5D9D9";
     auriculares2.style.borderColor = "#FF8F00";
     auriculares3.style.borderColor = "#D5D9D9";
-});
-auriculares3.addEventListener('click', function(){
-    contentArticleTres();
+}
+function contentArticleTres() {
+    var color = "Naranja";
+    var porcentaje = "-13 %";
+    var precio = 'US$<j class="number-valor">34</j>99';
+
+    containerProducUno.style.display = "none";
+    containerProducDos.style.display = "none";
+    containerProducTres.style.display = "block";
+    containerProductoMainUno.style.display = "none";
+    containerProductoMainDos.style.display = "none";
+    containerProductoMainTres.style.display = "flex";
+
+    textColor1.innerText = color;
+    textColor2.innerText = color;
+    porcentajeDescuento.innerText = porcentaje;
+    precioUno.innerHTML = precio;
+    precioDos.innerHTML = precio;
     auriculares1.style.borderColor = "#D5D9D9";
     auriculares2.style.borderColor = "#D5D9D9";
     auriculares3.style.borderColor = "#FF8F00";
+}
+
+auriculares1.addEventListener('click', function(){
+    contentArticleUno();
 });
+auriculares2.addEventListener('click', function(){
+    contentArticleDos();
+});
+auriculares3.addEventListener('click', function(){
+    contentArticleTres();
+});
+// Fin de las funciones para los divs de las imagenes con los precios

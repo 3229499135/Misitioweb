@@ -91,9 +91,9 @@ VanillaTilt.init(document.querySelectorAll(".card-container"), {
 let collapsibles = document.querySelectorAll('.faq-container');
 
 collapsibles.forEach(element => {
-    element.addEventListener("click", () =>{
-        element.querySelector('.faq-answer').classList.toggle('open');
-        element.querySelector('.name').classList.toggle('active');
-        element.querySelector('.arrow-container').classList.toggle('up');
-    })
+  element.addEventListener("click", () =>{
+    element.querySelector('.faq-answer').classList.toggle('open');
+    element.querySelector('.name').classList.toggle('active');
+    element.querySelector('.arrow-container').classList.toggle('up');
+  })
 });

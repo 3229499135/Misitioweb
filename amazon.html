@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="icons/all.css">
   <link rel="shortcut icon" href="img/favicon-amazon.png" type="image/png">
   <script defer src="js/amazon.js"></script>
-  <script defer src="js/amazon2.js"></script>
   <title>Amazon</title 
 </head>
 <body>
@@ -19,7 +18,7 @@
         <img src="img/amazon.png" class="logo" alt="Logo">
       </div>
       <div class="ubicacion">
-        <i class="fa-sharp fa-regular fa-location-dot fa-beat-fade"></i>
+        <i class="fa-solid fa-location-dot fa-beat-fade"></i>
         <div class="infor">
           <div class="enviar">Enviar a</div>
           <div class="colombia">
@@ -74,6 +73,7 @@
       </a>
     </div>
   </header>
+  <!-- Para el header 2 -->
   <div class="header2">
     <div class="div-todo">
       <span>&#9776</span>
@@ -87,21 +87,26 @@
       <a href="#" class="vender">Vender</a>
     </div>
   </div>
+  <!-- Para el header 3 -->
   <div class="header3">
     <div class="header-3-interno">
       <div class="img-header-3">
         <img src="img/auriculares1.jpg" alt="" class="img-header-3-interno">
       </div>
       <div class="text-header-3">Egghead Skylab - Auriculares estéreo LED multimedia para juegos, audífinos sobre la oreja con control de volumen y micrófono flexible con cancelación de ruido</div>
-      <div class="precio-unitario">$22<j class="number-tamaño">85</j></div>
+      <div class="precio-unitario">$25<j class="number-tamaño">99</j></div>
       <div class="icon-prime"><i class="icons-prime fa-solid fa-check"></i>Prime</div>
     </div>
   </div>
   <!-- Contenido Principal -->
+  <div class="patrocinio-volver">
+    <div class="patrocinio">Patrocinio</div>
+    <a href="#" class="volver">< Volver a resultados</a>
+  </div>
   <div class="content">
     <!-- Producto Uno -->
     <div class="container-produc" id="containerProducUno">
-      <div class="productoMain productoMain1" id="productoImgMainUno">
+      <div class="productoMain borderProductoMain" id="productoImgMainUno">
         <img class="img-producto" src="img/auriculares1.jpg" alt="producto">
       </div>
       <div class="productoMain" id="productoImgMainDos">
@@ -125,7 +130,7 @@
         <img id="original-image" class="producto" src="img/auriculares1.jpg" alt="Imagen principal del producto">
         <div  class="cordenadas" id="cordenadas"></div>
       </div>
-      <p>Pasa el mause encima de la imagen para aplicar zoom</p>
+      <p id="textProducto">Pasa el mause encima de la imagen para aplicar zoom</p>
     </div>
     <div id="magnifierUno" class="magnifier"></div>
     <!-- Producto Dos -->
@@ -152,7 +157,6 @@
     <div class="container-producto-main" id="containerProductoMainDos">
       <div class="content-img" id="producto">
         <img id="original-image" class="producto" src="img/auriculares2.jpg" alt="Imagen principal del producto">
-        <div  class="cordenadas" id="cordenadas"></div>
       </div>
       <p>Pasa el mause encima de la imagen para aplicar zoom</p>
     </div>
@@ -181,9 +185,8 @@
     <div class="container-producto-main" id="containerProductoMainTres">
       <div class="content-img" id="producto">
         <img id="original-image" class="producto" src="img/auriculares3.jpg" alt="Imagen principal del producto">
-        <div  class="cordenadas" id="cordenadas"></div>
       </div>
-      <p>Pasa el mause encima de la imagen para aplicar zoom</p>
+      <p id="textProducto">Pasa el mause encima de la imagen para aplicar zoom</p>
     </div>
     <div id="magnifierTres" class="magnifier"></div>
     <!-- Resto de Contenido -->
@@ -196,13 +199,13 @@
           <a href="#" class="visita-tienda-BENGOO">Visita la tienda de BENGOO</a>
         </div>
         <div class="estrellas-calificacion">
-          <div class="estrellas">
+          <div class="estrellas" id="star">
             <P id="numberEstrella">0</P>
-            <i class="start fa-star" id="etrellaUno"></i>
-            <i class="start fa-star" id="etrellaDos"></i>
-            <i class="start fa-star" id="etrellaTres"></i>
-            <i class="start fa-star" id="etrellaCuatro"></i>
-            <i class="start fa-star" id="etrellaCinco"></i>
+            <i class="star fa-star" id="etrellaUno"></i>
+            <i class="star fa-star" id="etrellaDos"></i>
+            <i class="star fa-star" id="etrellaTres"></i>
+            <i class="star fa-star" id="etrellaCuatro"></i>
+            <i class="star fa-star" id="etrellaCinco"></i>
             <i class="icono2 fa-solid fa-angle-down"></i>
           </div>
           <div class="div-calificacion">
@@ -212,8 +215,45 @@
             <a href="#" class="pregunta visita-tienda-BENGOO">1000+ preguntas respondidas</a>
           </div>
         </div>
+        <div class="calificacion-global" id="calificacionGlobal">
+          <div class="triangulo-1"></div>
+          <div class="estrellas estrella-div">
+            <i class="star fa-star" id="etrellaUnoDivs"></i>
+            <i class="star fa-star" id="etrellaDosDivs"></i>
+            <i class="star fa-star" id="etrellaTresDivs"></i>
+            <i class="star fa-star" id="etrellaCuatroDivs"></i>
+            <i class="star fa-star" id="etrellaCincoDivs"></i>
+            <P class="number-star-div"><j id="numberEstrellaDivs">0</j> de 5</P>
+          </div>
+          <p class="text-calificacion-global">103,415 calificaciones globales</p>
+          <div class="barras-estrellas">
+            <p>5 estrellas</p>
+            <div class="barra-principal"><div class="barra-ineterior barra-ineterior-5"></div></div>
+            <p class="porcentaje-barra">66%</p>
+          </div>
+          <div class="barras-estrellas">
+            <p>4 estrellas</p>
+            <div class="barra-principal"><div class="barra-ineterior barra-ineterior-4"></div></div>
+            <p class="porcentaje-barra">15%</p>
+          </div>
+          <div class="barras-estrellas"><p>3 estrellas</p>
+            <div class="barra-principal"><div class="barra-ineterior barra-ineterior-3"></div></div>
+            <p class="porcentaje-barra">8%</p></div>
+          <div class="barras-estrellas">
+            <p>2 estrellas</p>
+            <div class="barra-principal"><div class="barra-ineterior barra-ineterior-2"></div></div>
+            <p class="porcentaje-barra">4%</p>
+          </div>
+          <div class="barras-estrellas">
+            <p>1 estrellas</p>
+            <div class="barra-principal barra-principal-1"><div class="barra-ineterior barra-ineterior-1"></div></div>
+            <p class="porcentaje-barra">7%</p>
+          </div>
+          <hr>
+          <div class="div-opiniones-clientes"><a href="#" class="opiniones-clientes">Ver las opiniones de los clientes ></a></div>
+        </div>
         <div class="mas-vendido">
-          <div class="div-number-vendido">#1 más vendido</div>
+          <div class="div-number-vendido">#1 más vendido <div class="triangulo-2"></div></div>
           en Diademas y Audífinos de Xbox One
         </div>
         <div class="cant-vendidos">10 K+ comprados el mes pasado</div>
@@ -221,8 +261,8 @@
       <hr>
       <div class="content-text-thow">
         <div class="info-of-precio">
-          <div class="minus-porcent">-43 %</div>
-          <div class="info-of-valor">US$<j class="number-valor">22</j>99</div>
+          <div class="minus-porcent" id="porcentajeDescuento">-35 %</div>
+          <div class="info-of-valor" id="precioUno">US$<j class="number-valor">25</j>99</div>
         </div>
         <div class="precio-recomendado">Precio recomendado <j class="info-precio-recomendado">US$39.99</j></div>
         <div class="text-thow-primary color-info"> Devoluciones GRATIS <i class="icono2 fa-solid fa-angle-down"></i></div>
@@ -234,26 +274,26 @@
         <div class="divs-images">
           <div class="div-image divs-images-1" id="auricular1">
             <img src="img/auriculares1.jpg" alt="" class="image">
-            <div class="precio">US$22.85</div>
+            <div class="precio">US$25.99</div>
           </div>
           <div class="div-image divs-images-2" id="auricular2">
             <img src="img/auriculares2.jpg" alt="" class="image">
-            <div class="precio">Cop <span class="signo-precio-producto-divs">$</span><span class="precio-producto-divs" id="precioProductoDivsDos">0</span></div>
+            <div class="precio">US$35.99</div>
           </div>
           <div class="div-image divs-images-3" id="auricular3">
             <img src="img/auriculares3.jpg" alt="" class="image">
-            <div class="precio">US$20.88</div>
+            <div class="precio">US$34.99</div>
           </div>
         </div>
         <div>
           <table class="table-info-producto">
             <tr>
               <th class="th-left-of-content-center">Marca</th>
-              <td class="td-table-content" id="textMarca">BENGOO</td>
+              <td class="td-table-content">BENGOO</td>
             </tr>
             <tr>
               <th class="th-left-of-content-center">Nombre del modelo</th>
-              <td class="td-table-content" id="textModelo">G9000</td>
+              <td class="td-table-content">G9000</td>
             </tr>
             <tr>
               <th class="th-left-of-content-center">Color</th>
@@ -261,11 +301,11 @@
             </tr>
             <tr>
               <th class="th-left-of-content-center">Factor de forma</th>
-              <td class="td-table-content" id="textFactorForma">Por Arriba de la Oreja</td>
+              <td class="td-table-content">Por Arriba de la Oreja</td>
             </tr>
             <tr>
               <th class="th-left-of-content-center">Tecnología de conectividad</th>
-              <td class="td-table-content" id="tecnologiaConectividad">Alámbrico</td>
+              <td class="td-table-content">Alámbrico</td>
             </tr>
           </table>
         </div>
@@ -287,7 +327,7 @@
     </div>
     <div class="info-precio-produc">
       <div class="info-precio-produc-interno">
-        <div class="info-of-valor">US$<j class="number-valor">22</j>85</div>
+        <div class="info-of-valor" id="precioDos">US$<j class="number-valor">25</j>99</div>
         <span><a href="#" class="devolu">Devolucion GRATIS <i class="icono2 fa-solid fa-angle-down"></i></a></span>
         <div class="info-entrega-producto">
           <p>Sin depósito de derechos de importación y US$11.42 de envío a Colombia <span class="info-detalle">Detalles</span> <i class="icono fa-solid fa-angle-down"></i></p>
@@ -295,7 +335,7 @@
           <p class="text-info-entrega-producto-3">O entrega más rápida el <j class="negrilla">miércoles, 22 de noviembre</j>. Realiza el pedido en <j class="letra-verde">19 hrs 32 mins</j></p>
         </div>
         <div>
-          <a href="#" class="enviar-Colombia"><i class="fa-solid fa-location-dot fa-beat-fade icons"></i>Enviar a Colombia</a>
+          <a href="#" class="enviar-Colombia"><i class="fa-solid fa-location-dot icons"></i>Enviar a Colombia</a>
         </div>
         <div class="cantidad-carrito">
           <div>
@@ -355,7 +395,7 @@
           </div>
         </div>
       </div>
-      <div class="text-nuevo"><p class="nuevo-text">Nuevo 5 desde <v class="order-inicio"><j class="tamano">US$</j>22<j class="tamano">99</j></v></p><i class="icon-angle-right fa-solid fa-angle-right"></i></div>
+      <div class="text-nuevo"><p class="nuevo-text">Nuevo (5) desde <v class="order-inicio"><j class="tamano">US$</j>25<j class="tamano">99</j></v></p><i class="icon-angle-right fa-solid fa-angle-right"></i></div>
       <div class="otro-vendedor">
         <div class="otros-vendedores-amazon">Otros vendedores en Amazon</div>
         <hr>
@@ -383,19 +423,20 @@
       <div class="header-modal">
         <div class="header-modal-interno">
           <div class="text-video-image">
-            <div class="text-video">Videos</div>
-            <div class="text-image">Imagense</div>
+            <div class="text-video" id="textVideo">Videos</div>
+            <div class="text-image" id="textImage">Imagenes</div>
           </div>
-          <div id="btnX" class="btn-x"><i class="style-btn2 fa-solid fa-x"></i></div>
+          <div id="btnX" class="btn-x"><i class="style-btnX fa-solid fa-x"></i></div>
         </div>
         <hr>
       </div>
       <div class="content-producto-parte-dos">
-        <div class="container-producto-main-dos" id="producto">
+        <div class="container-producto-main-dos" id="productoContentModal">
           <img class="producto-main-dos" id="imgProducto" src="img/auriculares1.jpg" alt="Producto primario">
         </div>
         <div class="text">
           <p class="text-content">BENGOO G9000 - Auriculares estéreo para juegos para PS4, PC, Xbox One PS5, cancelación de ruido, auriculares con micrófono, luz LED, sonido envolvente de bajos, orejeras de memoria suave para portátil, Mac, Nintendo NES Games</p>
+          <p class="text-color">Color: Azul</p>
           <div class="container-producto">
             <div class="productos-divs-modal producto1" id="productoImgUno">
               <img class="img-producto" src="img/auriculares1.jpg" alt="producto">

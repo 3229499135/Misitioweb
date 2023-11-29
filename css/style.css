@@ -148,7 +148,7 @@ section {
   font-size: 18px;
 }
 
-/* Estilo del primer section(sobre mi) */
+/* Estilo del primer section(Información Personal) */
 #sobre-mi {
   margin-top: 80px;
 }
@@ -450,7 +450,7 @@ footer {
     height: 40%;
     font-size: 26px;
   }
-  /* Estilo del primer section(sobre mi) */
+  /* Estilo del primer section(Información Personal) */
   #sobre-mi {
     margin-top: 150px;
   }
@@ -472,7 +472,6 @@ footer {
   .open{
     height: 240px;
   }
-  /* Estilo del tercer section(contactos) */
   .faq-container{
     width: 100%;
   }
