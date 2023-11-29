@@ -471,9 +471,9 @@ a {
 .calificacion-global {
     width: 280px;
     background-color: #FFF;
-    position: relative;
-    top: -8px;
-    left: -72px;
+    position: absolute;
+    top: 448px;
+    left: 380px;
     border-radius: 8px;
     display: none;
     flex-direction: column;
