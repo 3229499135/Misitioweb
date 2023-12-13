@@ -462,3 +462,58 @@ auriculares3.addEventListener('click', function(){
     contentArticleTres();
 });
 // Fin de las funciones para los divs de las imagenes con los precios
+
+// Relleno de las barras de calificacion
+let  number5 = 68254;
+let  number4 = 15512;
+let  number3 = 8273;
+let  number2 = 4137;
+let  number1 = 7239;
+
+// Las barras
+let barraStar5 = document.getElementById("barraStar5");
+let barraStar4 = document.getElementById("barraStar4");
+let barraStar3 = document.getElementById("barraStar3");
+let barraStar2 = document.getElementById("barraStar2");
+let barraStar1 = document.getElementById("barraStar1");
+
+let numberStar5 = 0;
+let numberStar4 = 0;
+let numberStar3 = 0;
+let numberStar2 = 0;
+let numberStar1 = 0;
+
+let textBarra5 = document.getElementById("textBarra5");
+let textBarra4 = document.getElementById("textBarra4");
+let textBarra3 = document.getElementById("textBarra3");
+let textBarra2 = document.getElementById("textBarra2");
+let textBarra1 = document.getElementById("textBarra1");
+
+graficar.addEventListener("click", function() {
+    // Grafica 5
+    let valorTotalCalificacion = parseInt(number5) + parseInt(number4) + parseInt(number3) + parseInt(number2) + parseInt(number1);
+    let numberStar5 = (number5 * 100 / valorTotalCalificacion);
+    barraStar5.style.width = numberStar5.toString()+"%";
+    textBarra5.innerText = numberStar5.toFixed()+"%";
+
+    // Grafica 4
+    let numberStar4 = (number4 * 100 / valorTotalCalificacion);
+    barraStar4.style.width = numberStar4.toString()+"%";
+    textBarra4.innerText = numberStar4.toFixed()+"%";
+    
+    // Grafica 3
+    let numberStar3 = (number3 * 100 / valorTotalCalificacion);
+    barraStar3.style.width = numberStar3.toString()+"%";
+    textBarra3.innerText = numberStar3.toFixed()+"%";
+    
+    // Grafica 2
+    let numberStar2 = (number2 * 100 / valorTotalCalificacion);
+    barraStar2.style.width = numberStar2.toString()+"%";
+    textBarra2.innerText = numberStar2.toFixed()+"%";
+    
+    // Grafica 1
+    let numberStar1 = (number1 * 100 / valorTotalCalificacion);
+    barraStar1.style.width = numberStar1.toString()+"%";
+    textBarra1.innerText = numberStar1.toFixed()+"%";
+});
+// end of the bars

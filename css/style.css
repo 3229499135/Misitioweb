@@ -180,6 +180,13 @@ section {
     background-position: 200% center;
   }
 }
+.informacion-personal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 40px;
+}
+.info-per {}
 .user {
   width: 180px;
   border-radius: 26px;
