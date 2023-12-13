@@ -488,7 +488,7 @@ a {
     background-color: #FFF;
     position: absolute;
     top: 448px;
-    left: 380px;
+    left: 28%;
     border-radius: 8px;
     display: none;
     flex-direction: column;
@@ -541,9 +541,41 @@ a {
     margin: 0;
     background-color: var(--amarillo3);
     border-radius: 2.9px;
-    width: 66%;
+    width: 0%;
     transition: width 1s;
 }
+.barra-ineterior-5 {
+    width: 66%;
+}
+.barra-ineterior-4 {
+    width: 15%;
+}
+.barra-ineterior-3 {
+    width: 8%;
+}
+.barra-ineterior-2 {
+    width: 4%;
+}
+.barra-ineterior-1 {
+    width: 7%;
+}
+/* .btn-grafica {
+    width: 100px;
+    margin: 8px auto;
+}
+.input-grafica {
+    display: flex;
+    flex-direction: column;
+    width: 390px;
+    position: absolute;
+    border: 1px solid;
+    background-color: var(--blanco);
+    padding: 10px;
+}
+.puntuacion {
+    display: flex;
+    flex-direction: column;
+} */
 .div-opiniones-clientes {
     font-size: 14px;
     padding: 12px;
@@ -1040,6 +1072,24 @@ a {
 .producto4 {
     height: 80px;
 }
+/* @media screen and (max-width: 1940px) {
+    .calificacion-global {
+        position: absolute;
+        top: 418px;
+        left: 33.5%;
+    }
+}
+@media screen and (max-width: 1400px) {
+    .calificacion-global {
+        position: absolute;
+        top: 448px;
+        left: 28%;
+    }
+    .input-grafica {
+        position: absolute;
+        top: 296px;
+    }
+} */
 @media screen and (max-width: 450px) {
     /* .logo-enviar {} */
     .content-dos {

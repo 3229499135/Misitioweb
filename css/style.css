@@ -186,14 +186,16 @@ section {
   justify-content: center;
   margin: 40px;
 }
-.info-per {}
+.info-per {
+  margin: 0 20px;
+}
 .user {
   width: 180px;
   border-radius: 26px;
   border: solid;
   border-width: 3px;
   border-color: #088;
-  margin: 10px 0;
+  margin: 10px 20px;
 }
 /* Estilo del segundo section(Proyectos) */
 .letras {
