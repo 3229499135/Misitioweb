@@ -1,0 +1,21 @@
+.resultado-barras {
+    display: flex;
+    flex-direction: row;
+}
+.star-principal {
+    width: 100px;
+    height: 20px;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    margin: 10px;
+}
+.star-interno {
+    background-color: #ffa41c;
+    border-radius: 5px;
+    width: 0%;
+    height: 100%;
+    transition: width 1s;
+}
+p {
+    margin: 0;
+}

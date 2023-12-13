@@ -328,28 +328,29 @@ a {
 }
 
 /* Para el contenido de los productos */
+.container-principal {
+    max-width: 1500px;
+}
 .patrocinio-volver {
-    width: 100%;
+    max-width: 100%;
     font-size: 12px;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 .patrocinio {
-    width: 100%;
     display: flex;
     justify-content: right;
     margin: 0 8px;
 }
 .volver {
-    width: 100%;
     display: flex;
     justify-content: left;
     margin: 0 8px;
     color: var(--negro);
 }
 .content {
-    max-width: 1500px;
+    max-width: 100%;
     display: grid;
     grid-template: "container-produc    container-producto-main     texto   info-precio-produc" /
                     60px                    1.1fr                         2fr     250px;
@@ -420,6 +421,20 @@ a {
     background-color: #fff9;
     position: absolute;
     display: none;
+}
+.icon-arrow-superior {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    background-color: #FFF;
+    margin: 12px 7px;
+    background-image: url(../img/share-std.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .magnifier {
     width: 46.8%; /* Ancho de la lupa */
@@ -525,24 +540,9 @@ a {
     height: 100%;
     margin: 0;
     background-color: var(--amarillo3);
-}
-.porcentaje-barra {
-    margin: 0;
-}
-.barra-ineterior-5 {
+    border-radius: 5px;
     width: 66%;
-}
-.barra-ineterior-4 {
-    width: 15%;
-}
-.barra-ineterior-3 {
-    width: 8%;
-}
-.barra-ineterior-2 {
-    width: 4%;
-}
-.barra-ineterior-1 {
-    width: 7%;
+    transition: width 1s;
 }
 .div-opiniones-clientes {
     font-size: 14px;

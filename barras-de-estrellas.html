@@ -4,49 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .star-principal {
-            width: 200px;
-            height: 20px;
-            border: 1px solid #aaa;
-            border-radius: 6px;
-            margin: 10px;
-        }
-        .star-interno {
-            background-color: #ffa41c;
-            border-radius: 5px;
-        }
-        .star5 {
-            width: 66%;
-            height: 100%;
-        }
-    </style>
+    <link rel="stylesheet" href="css/barras-de-estrellas.css">
+    <script defer src="js/barras-de-estrellas.js"></script>
+    <title>Barras de estrellas</title>
 </head>
 <body>
     <form action="">
-        <input type="number" name="" id="number1" class="number"><br><br>
-        <input type="number" name="" id="number2" class="number"><br><br>
-        <input type="number" name="" id="number3" class="number"><br><br>
-        <input type="number" name="" id="number4" class="number"><br><br>
-        <input type="number" name="" id="number5" class="number"><br><br>
+        <label>Puntuación 5</label><input type="text" name="" id="number5" class="number" value="66"><br><br>
+        <label>Puntuación 4</label><input type="text" name="" id="number4" class="number" value="15"><br><br>
+        <label>Puntuación 3</label><input type="text" name="" id="number3" class="number" value="8"><br><br>
+        <label>Puntuación 2</label><input type="text" name="" id="number2" class="number" value="4"><br><br>
+        <label>Puntuación 1</label><input type="text" name="" id="number1" class="number" value="7"><br><br>
     </form>
 
     <div class="estrellas">
-        <div class="star-principal">
-            <div class="star-interno star5"></div>
+        <div class="resultado-barras">
+            <div class="star-principal">
+                <div class="star-interno star5" id="barraStar5"></div>
+            </div>
+            <p id="textBarra5"></p>
         </div>
-        <div class="star-principal">
-            <div class="star-interno star4"></div>
+        <div class="resultado-barras">
+            <div class="star-principal">
+                <div class="star-interno star4" id="barraStar4"></div>
+            </div>
+            <p id="textBarra4"></p>
         </div>
-        <div class="star-principal">
-            <div class="star-interno star3"></div>
+        <div class="resultado-barras">
+            <div class="star-principal">
+                <div class="star-interno star3" id="barraStar3"></div>
+            </div>
+            <p id="textBarra3"></p>
         </div>
-        <div class="star-principal">
-            <div class="star-interno star2"></div>
+        <div class="resultado-barras">
+            <div class="star-principal">
+                <div class="star-interno star2" id="barraStar2"></div>
+            </div>
+            <p id="textBarra2"></p>
         </div>
-        <div class="star-principal">
-            <div class="star-interno star1"></div>
+        <div class="resultado-barras">
+            <div class="star-principal">
+                <div class="star-interno star1" id="barraStar1"></div>
+            </div>
+            <p id="textBarra1"></p>
+        </div>
+        <div>
+            <button id="graficar">Graficar</button>
         </div>
     </div>
 </body>
