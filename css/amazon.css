@@ -542,9 +542,9 @@ a {
     background-color: var(--amarillo3);
     border-radius: 2.9px;
     width: 0%;
-    transition: width 1s;
+    transition: width 0.8s ease-in-out;
 }
-.barra-ineterior-5 {
+/* .barra-ineterior-5 {
     width: 66%;
 }
 .barra-ineterior-4 {
@@ -558,8 +558,8 @@ a {
 }
 .barra-ineterior-1 {
     width: 7%;
-}
-/* .btn-grafica {
+} */
+.btn-grafica {
     width: 100px;
     margin: 8px auto;
 }
@@ -575,7 +575,10 @@ a {
 .puntuacion {
     display: flex;
     flex-direction: column;
-} */
+}
+.number {
+    width: 80%;
+}
 .div-opiniones-clientes {
     font-size: 14px;
     padding: 12px;
@@ -1072,7 +1075,7 @@ a {
 .producto4 {
     height: 80px;
 }
-/* @media screen and (max-width: 1940px) {
+@media screen and (max-width: 1940px) {
     .calificacion-global {
         position: absolute;
         top: 418px;
@@ -1089,7 +1092,7 @@ a {
         position: absolute;
         top: 296px;
     }
-} */
+}
 @media screen and (max-width: 450px) {
     /* .logo-enviar {} */
     .content-dos {
