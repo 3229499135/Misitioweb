@@ -1,9 +1,12 @@
+/* Meses */
+let meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre']
+
 /* Para la fecha de la consulta */
 date = new Date();
 year = date.getFullYear();
-month = date.getMonth()+1;
+month = meses[date.getMonth()];
 day = date.getDate();
-document.getElementById("date").innerHTML = "Fecha de consulta "+day+" / "+month+" / "+year;
+document.getElementById("date").innerHTML = "Fecha de consulta: "+day+" de "+month+" de "+year;
 
 /* Para los botones de los trabajos */
 let trabajos = document.getElementById("trabajos");

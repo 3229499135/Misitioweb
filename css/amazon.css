@@ -276,7 +276,7 @@ a {
 /* Para el header 3 */
 .header3 {
     width: 100%;
-    height: 52px;
+    height: 48px;
     background-color: var(--blanco3);
     display: flex;
     justify-content: center;
@@ -285,7 +285,7 @@ a {
     font-size: 14px;
 }
 .header-3-interno {
-    max-width: 1100px;
+    max-width: 1110px;
     display: grid;
     grid-template: "img-header-3    text-header-3   precio-unitario   icon-prime"/
                     27px            1fr             52px                58px;
@@ -358,6 +358,7 @@ a {
     grid-gap: 16px;
     padding: 10px;
 }
+/* para las imagenes pequeñas de seleccionar para vizualizar como imagen principal */
 .container-produc {
     grid-area: container-produc;
     display: block;
@@ -387,6 +388,7 @@ a {
     width: 100%;
     border-radius: 10px;
 }
+/* contenedor donde esta la imagen del producto */
 .container-producto-main {
     grid-area: container-producto-main;
     position: relative;
@@ -449,6 +451,7 @@ a {
     left: 32.6%;
     z-index: 1;
 }
+/* El contenedor para la informacion del texto */
 .text {
     grid-area: texto;
 }
@@ -483,6 +486,7 @@ a {
 .calificacion, .pregunta {
     margin: 0 14px;
 }
+/* Modal de las barras */
 .calificacion-global {
     width: 280px;
     background-color: #FFF;
@@ -536,7 +540,7 @@ a {
 .barra-principal-1 {
     margin: 0 13px;
 }
-.barra-ineterior {
+.barra-interior {
     height: 100%;
     margin: 0;
     background-color: var(--amarillo3);
@@ -544,19 +548,22 @@ a {
     width: 0%;
     transition: width 0.8s ease-in-out;
 }
-/* .barra-ineterior-5 {
+/* .transition {
+    transition: all 0.8s ease-in-out;
+} */
+/* .barra-interior-5 {
     width: 66%;
 }
-.barra-ineterior-4 {
+.barra-interior-4 {
     width: 15%;
 }
-.barra-ineterior-3 {
+.barra-interior-3 {
     width: 8%;
 }
-.barra-ineterior-2 {
+.barra-interior-2 {
     width: 4%;
 }
-.barra-ineterior-1 {
+.barra-interior-1 {
     width: 7%;
 } */
 .btn-grafica {
@@ -727,6 +734,7 @@ a {
 .signo-precio-producto-divs, .precio-producto-divs {
     font-size: 14px;
 }
+/* Para en contenedor de la informacion del precio del producto */
 .info-precio-produc {
     grid-area: info-precio-produc;
 }
@@ -784,6 +792,9 @@ a {
 .btns {
     display: flex;
     flex-direction: column;
+}
+.pointer {
+    cursor: pointer;
 }
 .btn {
     height: 36px;
@@ -1010,14 +1021,14 @@ a {
 }
 .content-producto-parte-dos {
     display: grid;
-    grid-template: "container-producto-main  texto" /
-                    1fr                      380px;
+    grid-template: "container-producto-main-dos  texto" /
+                    1fr                          380px;
     margin-top: 6px;
     grid-gap: 20px;
     z-index: 1000;
 }
 .container-producto-main-dos {
-    grid-area: container-producto-main;
+    grid-area: container-producto-main-dos;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1095,14 +1106,14 @@ a {
 }
 @media screen and (max-width: 450px) {
     /* .logo-enviar {} */
+    /* Modal */
     .content-dos {
         max-width: 88%;
         background-color: var(--blanco);
         border-radius: 12px;
-        display: flex;
+        display: grid;
         flex-direction: column;
         margin-top: 6px;
-        grid-gap: 200px;
         padding: 10px;
         justify-content: center;
         align-items: center;
@@ -1114,6 +1125,13 @@ a {
         flex-direction: column;
         width: 400px;
         height: 410px;
+    }
+    .container-producto-parte-dos {
+        display: flex;
+        flex-direction: column;
+    }
+    .text-color {
+        display: none;
     }
     .text-content {
         display: none;
