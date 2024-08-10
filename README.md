@@ -1,7 +1,7 @@
 # Mi sitio web
 <div align="center">
 
-<img alt="Mi sitio web" src="img/mi-sitio-web.jpg" width="500">
+<img alt="Mi sitio web" src="img/mi-sitio-web.jpg" width="700">
 
 # Mi sitio web
 
